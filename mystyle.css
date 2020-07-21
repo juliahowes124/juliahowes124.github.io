@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: rgb(155, 200, 243);
+  }
+  
+  h1 {
+    color: navy;
+  }
+
+  #AboutMe {
+      color: black;
+      text-align: center;
+  }
+
+  main {
+      padding: 300px;
+      text-align: center;
+  }
+
+  body, html, .main {
+    height: 100%;
+    }
+
+    section {
+    min-height: 100%;
+    }
+
+    img {
+        display: block;
+        margin-top: 15px;
+        margin-left: 25px;
+        border: 2px solid white;
+        width: 240px;
+        height: 250px;
+      }
+  
