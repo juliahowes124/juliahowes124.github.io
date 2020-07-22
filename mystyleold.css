@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-
+    scroll-snap-type: y mandatory;
   }
 
 body {
@@ -15,29 +14,15 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-  
 
-nav {
-  background-color: #000;
-  display: block;
-  padding: 1em 0;
-  text-align: center;
-  width: 200px;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-}
 
 #carousel {
   width: 75%;
   height: 500px;
 }
 
-.container {
-  display: flex; /* or inline-flex */
+#about {
+  display: flex;
 }
 
 #description, #experience {
@@ -70,45 +55,44 @@ section {
 }
 
 
-  h1 {
-    color: white;
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#AboutMe {
+    color: black;
+    text-align: left;
+    padding: 50px
+}
+
+main {
+    padding: 300px;
     text-align: center;
-  }
+}
 
-  #AboutMe {
-      color: black;
-      text-align: left;
-      padding: 50px
-  }
+#chevron {
+  float: right;
+}
 
+body, html, .main {
+  height: 100%;
+}
 
-  main {
-      padding: 300px;
-      text-align: center;
-  }
+.card {
+  border: transparent;
+}
 
-  #chevron {
-    float: right;
-  }
+#profile-pic {
+  display: block;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 90%;
+  height: auto;
+  border-radius: 50%
+}
 
-  body, html, .main {
-    height: 100%;
-    }
-
-    .card {
-      border: transparent;
-    }
-
-     #profile-pic {
-        display: block;
-        margin-top: 15px;
-        margin-left: 15px;
-        width: 90%;
-        height: auto;
-        border-radius: 50%
-      }
-
-      /* Fade-in overlay and popup box */
+      /* Fade-in overlay and popup box
       #image2 {
         width: 50%;
       }
@@ -195,4 +179,4 @@ section {
         .popup{
           width: 70%;
         }
-      }
+      } */
