@@ -17,13 +17,13 @@
   </head>
   <body>
 <!-- HOME SECTION -->
-    <section class="inner cover" id="home" style="background-color: lightgrey">
+    <section class="inner cover" id="home">
         <div class="container" id="chevContainer">
-            <h1 class="cover-heading" style="font-family:'Courier New', Courier, monospace">Julia Howes</h1>
+            <h1 class="cover-heading" style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:rgb(39, 38, 38)">Julia Howes</h1>
             <div class="row">
                 <div class="col">
-                    <span id="chevron">
-                        <a href="#about"><i class="fa fa-angle-down fa-5x"></i></a>
+                    <span class="chevron">
+                        <a href="#about"><i class="fa fa-angle-down fa-5x" style="color: rgb(231, 225, 225);"></i></a>
                     </span>
                 </div>
             </div>
@@ -37,123 +37,114 @@
     
 <!-- ABOUT SECTION -->
     <section id="about">
-            <div class="row" style="width: 100%;">
-                <div class="col-sm-3" style="background-color: rgb(244, 244, 245);">
-                    <div class="card bg-transparent text-white" style="width: 100%;">
-                        <img src="images/profile-pic.png" class="card-img-top" alt="Profile Pic" id="profile-pic">
-                        <div class="card-body" style="color: black">
+            <div class="jumbotron jumbotron-fluid jumbotron-about">
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <h1 class="display-4" style="text-align: center; margin-right: -130px;">About</h1>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class="navbar" id="navbar">
+                                <a class="nav-link active" href="#home">Home</a>
+                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </div>
+            
+                            <script>
+                                window.onscroll = function() {myFunction()};
+                                var navbar = document.getElementById("navbar");
+                                var sticky = navbar.offsetTop;
+                                function myFunction() {
+                                if (window.pageYOffset >= 720) {
+                                    navbar.classList.add("sticky")
+                                } else {
+                                    navbar.classList.remove("sticky");
+                                }
+                                }
+                            </script>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="card bg-transparent text-white" style="width: 100%;">
+                <img src="images/profile-pic.png" class="card-img-top" alt="Profile Pic" id="profile-pic">
+                <div class="card-body" style="color: black">
+                    <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
+                    <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
+                    <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
+                </div>
+            </div>
+            <div class="row" style="width: 100%; margin: 0;background-color: #eae9dc;">
+                <div class="col-sm-6 bio">
+                    <div class="container">
+                        <div style="margin-right: 50px; margin-left: auto; background-color: #e98074; padding: 2%; border-radius: 2%;">
+                            This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.
+                            This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.
+                            This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.
+                            This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-8" style="background-color: rgb(201, 223, 231);">
-                    <h1 style="margin-top: 5%; text-align: center; color: rgb(116, 111, 111); font-family:'Courier New', Courier, monospace;">About</h1>
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-                            <li data-target="#carousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <div class="container" id="description" style="padding: 10%;">
-                                <p> This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.This is a long description about Julia.</p>
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                                <div class="container" id="skills" style="padding: 5%; margin: 5%;">
-                                    <div class="container" id="progressText">
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%;"><div class="tag bold flex">Javascript</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">CSS</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 30%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">HTML</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">C#</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">Python</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%;"><div class="tag bold flex">Angular</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 50%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">ASP.NET Core</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">C++</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 30%"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">MATLAB</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">LabVIEW</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>  
-                                </div>
+                <div class="col-sm-6" style="background-color: #d8c3a5;">
+                    <div class="container" id="skills" style="padding: 10%; margin: 10%;">
+                        <div class="container" id="progressText">
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%;"><div class="tag bold flex">Javascript</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 40%"></div>
                             </div>
-                          <div class="carousel-item">
-                            <div class="container" id="experience" style="padding: 10%;">
-                                <p>This is for experience and courses.</p>
-                              </div>
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-             
-                </div>
-                <div class="col-sm-1" style="background-color: rgb(201, 223, 231);">
-                    <div class="navbar" id="navbar">
-                            <a class="nav-link active" href="#home">Home</a>
-                            <a class="nav-link" href="#about">About</a>
-                            <a class="nav-link" href="#projects">Projects</a>
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">CSS</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">HTML</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">C#</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">Python</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%;"><div class="tag bold flex">Angular</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">ASP.NET Core</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">C++</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">MATLAB</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress">
+                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 20%"><div class="tag bold flex">LabVIEW</div></div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>  
                     </div>
- 
-                    <script>
-                        window.onscroll = function() {myFunction()};
-                        
-                        var navbar = document.getElementById("navbar");
-                        var sticky = navbar.offsetTop;
-                        
-                        function myFunction() {
-                          if (window.pageYOffset >= 720) {
-                            navbar.classList.add("sticky")
-                          } else {
-                            navbar.classList.remove("sticky");
-                          }
-                        }
-                    </script>
+             
                 </div>
             </div>
     </section>
 
 <!-- PROJECTS SECTION -->
     <section id="projectsSection">
-        <h1 class="mb-5" style="text-align: center; font-family:'Courier New', Courier, monospace;">Projects</h1>
         <div class="container" id="projects">
-            <div class="row" style="height: 50%;">
+            <div class="jumbotron jumbotron-fluid jumbotron-projects">
+                <div class="container">
+                  <h1 class="display-4" style="text-align: center;">Projects</h1>
+                  <p class="lead" style="text-align: center;">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+            <div class="row" style="height: 100%; margin-top: 10%;">
                 <div class="col-sm-6">
                     <div class="content">
                         <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
@@ -222,23 +213,7 @@
                         <img class="content-image" src="images/white.png">
                         <div class="content-details fadeIn-bottom">
                             <h3 class="content-title">Project 2</h3>
-                            <p class="content-text">This is a short description</p>
-                            <a class="button" href="#popup2">Go to link</a>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="height: 50%;">
-                <div class="col-sm-6">
-                    <div class="content">
-                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image" src="images/white.png">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Project 3</h3>
-                            <p class="content-text">Project 3 short description.</p>
+                            <p class="content-text">Project 2 short description.</p>
                             <a class="button" id="goToLink" href="#popup2"></a>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -288,34 +263,12 @@
                             <button type="button" class="btn btn-primary"><i class="fa fa-heart"></i></button>
                             </div>
                         </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-6">
-                    <div class="content">
-                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image" src="images/white.png">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Project 4</h3>
-                            <p class="content-text">This is a short description</p>
-                            <a class="button" href="#popup2">Go to link</a>
-                        </div>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- CONTACT SECTION -->
-    <section id="contact" style="background-color:lightgreen">
-        <div class="container">
-            Contact Me <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-3x ml-3 mr-3 mb-2"></i></a>
-        </div>
-        
-    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
