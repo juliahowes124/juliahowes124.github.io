@@ -2,18 +2,15 @@
 html {
   scroll-behavior: smooth;
 }
-      body {
-        height: 100%;
-        position: relative;
-      }
-      #navbar {
-        overflow: hidden;
-        background-color: #8e8d8a;
-        float: right;
-        z-index: 5;
-        width: 100px;
-        
-      }
+
+.row {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
       .card {
         border: none;
@@ -34,53 +31,15 @@ html {
         color: white;
       }
 
-      #chevContainer {
-        height: 100%;
-        width: 100%;
-       
+      .skills {
+        padding: 5%;
+        margin-top: 20%;
+        margin-left: 15%;
       }
 
-        
-      .chevron {
-        position: relative;
-        bottom: -350px;
-        right: -650px;
-      }
-
-      .row {
-        width: 100%;
-      }
       .col {
         height: 100%;
         width: 100;
-      }
-
-      #navbar a{ 
-        color: #f2f2f2;
-        text-align: right;
-        /* width: 100px;
-        transform: translateX(-30px); */
-      }
-
-      #navbar {
-        padding: 0;
-      }
-
-      .sticky {
-        position: fixed;
-        top: 0;
-        right: 2%;
-        width: 7%;
-      }
-
-      .sticky + .content {
-        padding-top: 60px;
-      }
-    
-
-      #projects {
-          position: relative;
-          width: 50%;
       }
 
       .progress{
@@ -102,20 +61,6 @@ html {
         padding: 2%;
       }
 
-      #home {
-        display: block;
-        text-align: center;
-        padding: 15%;
-        background: url(images/background.png);
-        background-attachment: fixed;
-        background-size: 100%;
-        background-position: 10%;
-      }
-
-      #projectsSection, #aboutSection {
-        padding: 5%;
-      }
-
       #home, #about, #projects, #contact {
         height: 100vh;
         width: 100vw;
@@ -132,132 +77,10 @@ html {
         border-radius: 50%;
       }
 
-      .button {
-        color: #fff;
-        padding: 2%;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease-out;
-      }
 
-      .button:hover {
-        background: #06D85F;
-      }
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-*, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-}
 
 body{
   background: #eae7dc;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
-}
-
-
-.content {
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content:hover .content-overlay{
-  opacity: 1;
-}
-
-.content-image{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
-}
-
-.fadeIn-bottom{
-  top: 80%;
-}
-
-#goToLink {
-  position: relative;
-  translate: 50px;
-}
-
-#projectComp {
-  width: 100%;
-}
-
-.jumbotron-projects {
-  color: rgb(248, 240, 240);
-  background-color: #e85a4f;
-  margin: 0;
-}
-
-.jumbotron-about {
-  color: rgb(248, 240, 240);
-  background-color: #e85a4f;
-  margin: 0;
-}
-
-
-/* CONTACT */
-form {
-  width: 50%;
-  margin-left: 25%;
 }
