@@ -18,32 +18,35 @@
   <body>
     <nav class="navbar navbar-light">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#home">Home</a>
+            <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#projects">Projects</a>
             <a class="nav-item nav-link" href="#resume">Resume</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
         </div>
     </nav>
 
-    <div class="home-section full-height" id="home">
+    <div class="front full-height" id="home">
+        <h1 class="display-4" style="text-align: center;">Julia Howes</h1>
+    </div>
+    <div class="full-height" id="about">
             <div class="card profile-card shadow">
                 <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
                 <div class="card-body" style="color: black;">
                     <h3>Julia Howes</h3>
-                    <hr style="background-color: #e85a4f;">
+                    <p>Los Angeles, CA</p>
+                    <hr style="background-color: #ce0303;">
                     <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
                     <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
                     <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
                 </div>
             </div>
             <div class="row full-height">
-                <div class="col-sm-4" style="background-color: #eae7dc"></div>
+                <div class="col-sm-4" style="background-color: #dfceba"></div>
                 <div class="col-sm-8" style="background-color: white">
                     <div class="jumbotron bio">
-                            <h1 class="display-4">Hello</h1>
-                            <p>Welcome to my website!</p>
-                            <hr class="my-4">
-                            <p>Hello, I’m Julia! I am a recent graduate from the University of Minnesota, and am now based in Los Angeles. I received my Bachelors in biomedical engineering, but am enthusiastically pursuing a career shift to web development. </p>
+                            <h1 class="display-4">About Me</h1>
+                            <hr class="my-4" style="background-color: #ce0303">
+                            <p>Hello I am julia I am cool please hire me.</p>
                     </div>
                 </div>
             </div>
@@ -53,9 +56,8 @@
 
     <div class="projects-section full-height" id="projects">
         <div class="container">
-            <div class="title">
-                <h1 class="display-4" style="text-align: center;">Projects</h1>
-            </div>
+            <h1 class="display-4 title" style="text-align: center;">Projects</h1>
+            <hr style="margin-top: 50px; background-color: red; width: 70%; margin-left: 15%">
             <div class="row" style="height: 100%; margin-top: 10%;">
                 <div class="col-sm-6">
                     <div class="content">
@@ -66,34 +68,37 @@
                             <p class="content-text">A platform for owners needing to rehome their pets to connect with prospective adopters.</p>
                             <a class="button" id="goToLink" href="#popup2"></a>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="btn project-button" data-toggle="modal" data-target="#petnet">
                             <i class="fa fa-chevron-circle-down fa-lg"></i>
                         </button>
                     </div>
                 </div>
     
                     <!-- PetNet Details -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="petnet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                             <h5 class="modal-title" >PetNet</h5>
-                            <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-1x"></i></a>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
                             <div class="modal-body">
                                 <div class="container">
-                                    <img class="web-img" src="images/Koda.JPG" alt="">
+                                    <img class="web-img" src="images/PetNet.png" alt="">
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-2x"></i></a>
+                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-github fa-2x"></i></a>
                                 </div>
                                 <hr>
-                                <div class="container">This is the description of the app tech.</div>
+                                <div class="container">This website is equipped with an Angular front-end and an ASP.NET Core back-end.</div>
                                 <hr>
                                 <div class="container">
                                         <div class="progress" id="projectComp">
-                                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">HTML</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 20%"></div>
+                                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">HTML</div></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"></div>
                                         </div>
                                         <div class="progress" id="projectComp">
                                             <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">CSS</div></div>
@@ -109,9 +114,6 @@
                                         </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                            Check it out!
-                            </div>
                         </div>
                         </div>
                     </div>
@@ -120,13 +122,13 @@
                 <div class="col-sm-6">
                     <div class="content">
                         <div class="content-overlay"></div>
-                        <img class="content-image" src="images/white.png">
+                        <img class="content-image" src="images/goldengate.png">
                         <div class="content-details fadeIn-bottom">
                             <h3 class="content-title">Travel App</h3>
                             <p class="content-text">A social app to share travel experiences</p>
                             <a class="button" id="goToLink" href="#popup2"></a>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="btn project-button" data-toggle="modal" data-target="#travelapp">
                             <i class="fa fa-chevron-circle-down fa-lg"></i>
                         </button>
                         
@@ -135,43 +137,43 @@
                         </a>
                     </div>
     
-                    <!-- Project 3 Details -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Travel App Details -->
+                    <div class="modal fade" id="travelapp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" >Pet Finder</h5>
+                            <h5 class="modal-title" >Travel App</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
                             <div class="modal-body">
-                                <div class="container">This is the description of the app content.</div>
+                                <div class="container">
+                                    <img class="web-img" src="images/white.png" alt="">
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-2x"></i></a>
+                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-github fa-2x"></i></a>
+                                </div>
                                 <hr>
-                                <div class="container">This is the description of the app tech.</div>
+                                <div class="container">This website is a MERN app.</div>
                                 <hr>
-                                <div class="container" id="progressText">
-                                    <h6>Languages</h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="container">
+                                        <div class="progress" id="projectComp">
+                                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">JavaScript</div></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"></div>
                                         </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress" id="projectComp">
+                                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">CSS</div></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 10%"></div>
                                         </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress" id="projectComp">
+                                            <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">JSX</div></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 40%"></div>
                                         </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-primary"><i class="fa fa-heart"></i></button>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +181,7 @@
         </div>
     </div>
     
-    <div class="resume-section full-height" id="resume">
+    <!-- <div class="resume-section full-height" id="resume">
         <div class="title">
             <h1 class="display-4" style="text-align: center;">Projects</h1>
         </div>
@@ -235,7 +237,7 @@
                 </div>
             </div>  
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Optional JavaScript -->
