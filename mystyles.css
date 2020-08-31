@@ -3,32 +3,47 @@ html {
   scroll-behavior: smooth;
 }
 
-.row {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.full-height {
+  height: 100vh;
 }
 
-      .card {
-        border: none;
-        z-index: 5;
-        position: absolute;
-      }
+.shadow {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.navbar {
+  width: 10%;
+  position: fixed;
+  transform: translateX(900%);
+  z-index: 1000;
+}
+
+.skills-section {
+  background-color: lightblue;
+}
+
+.profile-card {
+  background-color: #dfd2bf;
+  transform: translate(55%, 40%);
+  width: 25%;
+  z-index: 100;
+  position: absolute;
+}
+
+.bio {
+  padding: 2%;
+  margin-top: 20%;
+  margin-left: 10%;
+  width: 50%;
+  background: transparent;
+}
 
       .card-body {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-      }
-
-      .bio {
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 5%;
-        color: white;
       }
 
       .skills {
@@ -56,22 +71,12 @@ html {
         background-color: rgb(115, 199, 188);
       }
 
-
-      h2 {
-        padding: 2%;
-      }
-
-      #home, #about, #projects, #contact {
-        height: 100vh;
-        width: 100vw;
-      }
-
-      #profile-pic {
+      .profile-pic {
         position: relative;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-top: 10%;
         width: 200px;
         height: auto;
         border-radius: 50%;
