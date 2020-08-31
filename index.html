@@ -20,8 +20,8 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#resume">Resume</a>
             <a class="nav-item nav-link" href="#">Contact</a>
-            <a class="nav-item nav-link" href="#">Resume</a>
         </div>
     </nav>
 
@@ -30,14 +30,14 @@
                 <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
                 <div class="card-body" style="color: black;">
                     <h3>Julia Howes</h3>
-                    <hr>
+                    <hr style="background-color: #e85a4f;">
                     <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
                     <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
                     <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
                 </div>
             </div>
             <div class="row full-height">
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="background-color: #eae7dc"></div>
                 <div class="col-sm-8" style="background-color: white">
                     <div class="jumbotron bio">
                             <h1 class="display-4">Hello</h1>
@@ -51,69 +51,66 @@
         </div>
     </div>
 
-    <div class="skills-section full-height" id="projects">
-        <div class="container" id="projects">
-            <div class="jumbotron jumbotron-fluid jumbotron-projects">
-                <div class="container">
-                  <h1 class="display-4" style="text-align: center;">Projects</h1>
-                </div>
+    <div class="projects-section full-height" id="projects">
+        <div class="container">
+            <div class="title">
+                <h1 class="display-4" style="text-align: center;">Projects</h1>
             </div>
             <div class="row" style="height: 100%; margin-top: 10%;">
                 <div class="col-sm-6">
-                    <div>
-                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                    <div class="content">
                         <div class="content-overlay"></div>
-                        <img class="content-image" src="images/Koda.jpg">
+                        <img class="content-image" src="images/Koda.JPG">
                         <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Pet Finder</h3>
-                            <p class="content-text">A platform where owners looking to rehome their pets can connect with prospective adopters.</p>
+                            <h3 class="content-title">PetNet</h3>
+                            <p class="content-text">A platform for owners needing to rehome their pets to connect with prospective adopters.</p>
                             <a class="button" id="goToLink" href="#popup2"></a>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             <i class="fa fa-chevron-circle-down fa-lg"></i>
                         </button>
-                        
-                        </div>
-                        
-                        </a>
                     </div>
+                </div>
     
-                    <!-- Pet App Details -->
+                    <!-- PetNet Details -->
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" >Pet Finder</h5>
+                            <h5 class="modal-title" >PetNet</h5>
+                            <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-1x"></i></a>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
                             <div class="modal-body">
-                                <div class="container">Surrender and adoption is a stressful process for any pet, an</div>
+                                <div class="container">
+                                    <img class="web-img" src="images/Koda.JPG" alt="">
+                                </div>
                                 <hr>
                                 <div class="container">This is the description of the app tech.</div>
                                 <hr>
                                 <div class="container">
                                         <div class="progress" id="projectComp">
                                         <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">HTML</div></div>
-                                        <div class="progress-bar" role="progressbar" style="width: 18%"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 20%"></div>
                                         </div>
                                         <div class="progress" id="projectComp">
                                             <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">CSS</div></div>
-                                            <div class="progress-bar" role="progressbar" style="width: 3%"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 10%"></div>
                                         </div>
                                         <div class="progress" id="projectComp">
                                             <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">Typescript</div></div>
-                                            <div class="progress-bar" role="progressbar" style="width: 42%"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 40%"></div>
                                         </div>
                                         <div class="progress" id="projectComp">
                                             <div class="progress-bar" id="barTitle" role="progressbar" style="width: 30%;"><div class="tag bold flex">C#</div></div>
-                                            <div class="progress-bar" role="progressbar" style="width: 37%"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 30%"></div>
                                         </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-primary"><i class="fa fa-heart"></i></button>
+                            Check it out!
                             </div>
                         </div>
                         </div>
@@ -122,12 +119,11 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="content">
-                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
                         <div class="content-overlay"></div>
                         <img class="content-image" src="images/white.png">
                         <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Project 2</h3>
-                            <p class="content-text">Project 2 short description.</p>
+                            <h3 class="content-title">Travel App</h3>
+                            <p class="content-text">A social app to share travel experiences</p>
                             <a class="button" id="goToLink" href="#popup2"></a>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -181,9 +177,12 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- 
-    <section class="skills-section">
+    </div>
+    
+    <div class="resume-section full-height" id="resume">
+        <div class="title">
+            <h1 class="display-4" style="text-align: center;">Projects</h1>
+        </div>
         <div class="container skills">
             <div class="container" id="progressText">
                 <div class="progress">
@@ -236,7 +235,7 @@
                 </div>
             </div>  
         </div>
-    </section> -->
+    </div>
 
 
     <!-- Optional JavaScript -->
