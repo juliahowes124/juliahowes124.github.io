@@ -16,36 +16,53 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-light">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#home">Home</a>
-            <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#projects">Projects</a>
-            <a class="nav-item nav-link" href="#resume">Resume</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
     <div class="front full-height" id="home">
         <h1 class="display-4" style="text-align: center;">Julia Howes</h1>
     </div>
     <div class="full-height" id="about">
-            <div class="card profile-card shadow">
-                <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
-                <div class="card-body" style="color: black;">
-                    <h3>Julia Howes</h3>
-                    <p>Los Angeles, CA</p>
-                    <hr style="background-color: #ce0303;">
-                    <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
-                    <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
-                    <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
-                </div>
-            </div>
+            
             <div class="row full-height">
-                <div class="col-sm-4" style="background-color: #dfceba"></div>
+                <div class="col-sm-4 card-col">
+                    <h1 class="display-4 mobile-about">About Me</h1>
+                    <div class="card profile-card shadow">
+                        <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
+                        <div class="card-body" style="color: black;">
+                            <h3>Julia Howes</h3>
+                            <p>Los Angeles, CA</p>
+                            <hr style="background-color: #ff3a22;">
+                            <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
+                            <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
+                            <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
+                        </div>
+                    </div>
+                    <p class="mobile-bio">Hello I am julia I am cool please hire me.</p>
+                </div>
                 <div class="col-sm-8" style="background-color: white">
                     <div class="jumbotron bio">
                             <h1 class="display-4">About Me</h1>
-                            <hr class="my-4" style="background-color: #ce0303">
+                            <hr class="my-4" style="background-color: #ff3a22">
                             <p>Hello I am julia I am cool please hire me.</p>
                     </div>
                 </div>
@@ -57,7 +74,7 @@
     <div class="projects-section full-height" id="projects">
         <div class="container">
             <h1 class="display-4 title" style="text-align: center;">Projects</h1>
-            <hr style="margin-top: 50px; background-color: red; width: 70%; margin-left: 15%">
+            <hr style="margin-top: 50px; background-color: #ff3a22; width: 70%; margin-left: 15%">
             <div class="row" style="height: 100%; margin-top: 10%;">
                 <div class="col-sm-6">
                     <div class="content">
