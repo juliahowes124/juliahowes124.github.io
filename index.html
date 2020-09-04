@@ -41,34 +41,30 @@
     <div class="front full-height" id="home">
         <h1 class="display-4" style="text-align: center;">Julia Howes</h1>
     </div>
-    <div class="full-height" id="about">
-            
-            <div class="row full-height">
+    <div class="row full-height" id="about">
                 <div class="col-sm-4 card-col">
                     <h1 class="display-4 mobile-about">About Me</h1>
                     <div class="card profile-card shadow">
                         <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
-                        <div class="card-body" style="color: black;">
+                        <div class="card-body card-body-profile" style="color: black;">
                             <h3>Julia Howes</h3>
                             <p>Los Angeles, CA</p>
-                            <hr style="background-color: #ff3a22;">
-                            <a href="http://www.linkedin.com/in/julia-howes/"><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
-                            <a href="https://github.com/juliahowes124"><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
-                            <a href="mailto: julia.howes@gmail.com"><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
+                            <hr style="background-color: #35727b;">
+                            <a href="http://www.linkedin.com/in/julia-howes/" target=”_blank”><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: #0077b5"></i></a>
+                            <a href="https://github.com/juliahowes124" target=”_blank”><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: black"></i></a>
+                            <a href="mailto: julia.howes@gmail.com" target=”_blank”><i class="fa fa-envelope fa-2x ml-3 mr-3 mb-2" style="color: #ebeff9"></i></a>
                         </div>
                     </div>
-                    <p class="mobile-bio">Hello I am julia I am cool please hire me.</p>
+                    <p class="mobile-bio">Hello, I’m Julia! I am a recent graduate from the University of Minnesota, now living in Los Angeles. I received my Bachelors in biomedical engineering, but am enthusiastically pursuing a career shift into web development!</p>
                 </div>
                 <div class="col-sm-8" style="background-color: white">
                     <div class="jumbotron bio">
                             <h1 class="display-4">About Me</h1>
-                            <hr class="my-4" style="background-color: #ff3a22">
-                            <p>Hello I am julia I am cool please hire me.</p>
+                            <hr class="my-4" style="background-color: #35727b">
+                            <p>Hello, I’m Julia! I am a recent graduate from the University of Minnesota, now living in Los Angeles. I received my Bachelors in biomedical engineering, but am enthusiastically pursuing a career shift into web development!</p>
                     </div>
                 </div>
             </div>
-            
-        </div>
     </div>
 
     <div class="projects-section full-height" id="projects">
@@ -96,7 +92,8 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" >PetNet</h5>
+                            <h5 class="modal-title" style="margin-right: 10px">PetNet</h5>
+                            <a href="https://github.com/juliahowes124/PetApp" target=”_blank”><i class="fa fa-github fa-2x"></i></a>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -106,8 +103,7 @@
                                     <img class="web-img" src="images/PetNet.png" alt="">
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-2x"></i></a>
-                                    <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-github fa-2x"></i></a>
+                                    <!-- <a href="https://github.com/juliahowes124/PetApp"><i class="fa fa-external-link fa-2x"></i></a> -->
                                 </div>
                                 <hr>
                                 <div class="container">This website is equipped with an Angular front-end and an ASP.NET Core back-end.</div>
@@ -198,63 +194,96 @@
         </div>
     </div>
     
-    <!-- <div class="resume-section full-height" id="resume">
+    <div class="resume-section full-height" id="resume">
         <div class="title">
-            <h1 class="display-4" style="text-align: center;">Projects</h1>
+            <h1 class="display-4" style="text-align: center;">Resume</h1>
         </div>
-        <div class="container skills">
-            <div class="container" id="progressText">
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">JavaScript</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+        <div class="row">
+            <div class="col">
+                <h2 class="skills-title">Skills</h2>
+                <div class="container skills">
+                    <div class="container" id="progressText">
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">JavaScript</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">TypeScript</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">CSS</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">HTML</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">C#</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">Python</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">Angular</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">React</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 20%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">ASP.NET Core</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">C++</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">MATLAB</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">LabVIEW</div></div>
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>  
                 </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">TypeScript</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+            </div>
+            <div class="col">
+                <h2 class="skills-title">Education and Experience</h2>
+                <div class="experience">
+                    <div class="card card-experience">
+                        <div class="card-body">
+                          <h5 class="card-title">Computer Engineering Intern</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Monteris Medical, Plymouth MN</h6>
+                          <small>May 2019-August 2019</small>
+                          <p class="card-text">
+                              <ul>
+                                  <li>Developed a LabVIEW interface to automate and triple the efficiency of a time-consuming inspection process.</li>
+                                  <li>Accelerated a critical-chain change control objective by characterizing lasers and implementing LabVIEW features
+                                    to improve ease, accuracy, and speed (10x) of data analysis.</li>
+                              </ul>
+                          </p>
+                        </div>
+                    </div>
+                    <div class="card card-experience">
+                        <div class="card-body">
+                          <h5 class="card-title">Bachelor of Biomedical Engineering</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">University of Minnesota-Twin Cities, Minneapolis MN</h6>
+                          <small>September 2016-May 2020</small>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">CSS</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">HTML</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">C#</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 35%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">Python</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">Angular</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%;"><div class="tag bold flex">React</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 20%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">ASP.NET Core</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">C++</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 30%"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">MATLAB</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="progress">
-                <div class="progress-bar" id="barTitle" role="progressbar" style="width: 25%"><div class="tag bold flex">LabVIEW</div></div>
-                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>  
+            </div>
         </div>
-    </div> -->
+        
+    </div>
 
 
     <!-- Optional JavaScript -->
