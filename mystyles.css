@@ -1,6 +1,17 @@
-/* Fade-in overlay and popup box */
+/* GLOBAL STYLING */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+:root {
+  --primary: #dfceba;
+  --secondary: #e4dcd0;
+  --dark: #353333;
+  --accent: #35727b;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .full-height {
@@ -8,19 +19,10 @@ html {
   width: 100%;
 }
 
-.front {
-  display: block;
-  text-align: center;
-  padding: 15%;
-  background: url(images/background.png);
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: 10%;
-}
 
-.front h1 {
-  text-align: center;
-  color: #353333;
+body{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .shadow {
@@ -29,10 +31,7 @@ html {
   box-shadow:         inset 0 0 10px #000000;
 }
 
-.card-col {
-  background-color: #dfceba;
-}
-
+/* NAV BAR STYLING */
 .navbar {
   width: 10%;
   position: fixed;
@@ -40,20 +39,38 @@ html {
   font-size: large;
 }
 
-.resume-section {
-  background-color: lightblue;
+/* HOME PAGE STYLING */
+#home{
+  display: block;
+  text-align: center;
+  padding: 15%;
+  background: url(images/background.png) no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 10%;
 }
 
-#about {
-  width: 105%;
+#home h1{
+  text-align: center;
+  color: var(--dark);
+}
+
+/* ABOUT PAGE STYLING */
+
+.col-sm-4 {
+  background-color: var(--primary);
 }
 
 .profile-card {
-  background-color: #e4dcd0;
+  background-color: var(--secondary);
   transform: translate(55%, 10%);
   width: 70%;
-  z-index: 100;
+  z-index: 5;
   position: absolute;
+}
+
+.profile-card hr{
+  background-color: var(--accent);
 }
 
 .bio {
@@ -64,48 +81,55 @@ html {
   background: transparent;
 }
 
+.bio hr {
+  background-color: var(--accent);
+}
+
+.bio p {
+  width: 110%;
+}
+
+.card-body-profile {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  height: 100%;
+  width: 100;
+}
+
+.profile-pic {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
 .mobile-bio, .mobile-about {
   visibility: hidden;
 }
 
-      .card-body-profile {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
 
-      .col {
-        height: 100%;
-        width: 100;
-      }
-
-      .profile-pic {
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-        width: 200px;
-        height: auto;
-        border-radius: 50%;
-      }
-
-
-
-body{
-  background: #d8c3a5;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+/* PROJECTS SECTION STYLING*/
+#projects {
+  background-color: white;
 }
 
-/* PROJECTS */
-
-.title {
+#projects h1 {
   transform: translateY(30px);
 }
 
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+#projects hr {
+  background-color: var(--accent);
+  margin: 50px 0 0 15%;
+  width: 70%;
+}
 
 *, *:before, *:after{
   margin: 0;
@@ -115,24 +139,6 @@ body{
   box-sizing: border-box;
 }
 
-
-.project-button {
-  background-color: #4f9ce4;
-  color: white;
-}
-
-body{
-  background: #eae7dc;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.web-img {
-  width: 100%;
-  object-fit: scale-down;
-}
-
-
 .content {
   position: relative;
   width: 90%;
@@ -140,8 +146,6 @@ body{
   margin: auto;
   overflow: hidden;
 }
-
-
 
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
@@ -157,17 +161,14 @@ body{
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-
 .content:hover .content-overlay{
   opacity: 1;
 }
-
 .content-image{
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
-
 .content-details {
   position: absolute;
   text-align: center;
@@ -184,13 +185,11 @@ body{
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .content:hover .content-details{
   top: 50%;
   left: 50%;
   opacity: 1;
 }
-
 .content-details h3{
   color: #fff;
   font-weight: 500;
@@ -202,6 +201,19 @@ body{
 .content-details p{
   color: #fff;
   font-size: 15px;
+}
+
+
+
+
+.project-button {
+  background-color: #4f9ce4;
+  color: white;
+}
+
+.web-img {
+  width: 100%;
+  object-fit: scale-down;
 }
 
 .fadeIn-bottom{
@@ -222,15 +234,6 @@ body{
   background-color: transparent;
   margin: 0;
 }
-/* 
-.fa-external-link {
-  margin-left: 10px;
-  color: blue;
-} */
-
-.projects-section {
-  background-color: white;
-}
 
 .project-links {
   float: right;
@@ -240,14 +243,14 @@ body{
   background-color: white;
 }
 
-.modal-description {
-  margin-top: 10px;
-  font-family: sans-serif;
-}
-
 .modal-title {
   font-size: 25px;
-  color: rgb(53, 52, 52);
+  color: var(--dark);
+}
+
+
+.modal-description {
+  padding: 20px;
 }
 
 /* RESUME */
@@ -284,30 +287,50 @@ body{
   text-align: center;
 }
 
+
+
+
+
+/* MOBILE STYLING */
 @media screen and (max-width: 640px) {
+
+  .full-height {
+    height: auto;
+    width: 100%;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
 
   .mobile-about {
     visibility: visible;
     background-color: transparent;
     text-align: center;
-    margin-top: 10%;
+    transform: translate(10px, 30px);
   }
 
   .mobile-bio {
     visibility: visible;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 10%;
+    padding: 10px;
+    position: relative;
   }
 
   .bio {
-    visibility: hidden;
+    display: none;
   }
 
   .profile-card {
     width: 90%;
     margin-left: 5%;
     position: relative;
-    transform: translate(2.5%);
+    transform: translate(2.5%, 30px);
   }
 
   .navbar {
@@ -315,14 +338,6 @@ body{
     position: fixed;
     transform: translateX(0%);
     z-index: 1000;
-  }
-
-  .bio {
-    padding: 2%;
-    margin-top: 20%;
-    margin-left: 10%;
-    width: 100%;
-    background: transparent;
   }
 
   .content {
@@ -335,25 +350,21 @@ body{
     height: 100%;
   }
 
-  .front {
+  #home {
     display: block;
     text-align: center;
     padding: 10%;
-    background: url(images/background.png);
+    background: url(images/background.png) no-repeat;
     background-attachment: fixed;
-    background-size: default;
-    background-position: 10%;
+    background-position: 60%, 20%;
   }
 
   .col-sm-4 {
     background-color: white;
   }
 
-  .mobile-bio {
-    padding: 0;
-  }
   
-  .front h1 {
+  #home h1 {
     margin-top: 50%;
   }
 
