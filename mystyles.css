@@ -47,7 +47,7 @@ body{
 #home{
   display: block;
   text-align: center;
-  padding: 15%;
+  padding: 10%;
   background: url(images/background.png) no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -57,6 +57,27 @@ body{
 #home h1{
   text-align: center;
   color: var(--dark);
+}
+
+.arrow {
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: rgb(145, 145, 145);
+}
+
+@keyframes arrow {
+  0% {
+      margin-top: 0px;
+  }
+  50% {
+      margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 
 /* ABOUT PAGE STYLING */
@@ -218,6 +239,7 @@ body{
 .web-img {
   width: 100%;
   object-fit: scale-down;
+  margin-bottom: 5%;
 }
 
 .fadeIn-bottom{
@@ -230,7 +252,8 @@ body{
 }
 
 #projectComp {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .jumbotron-projects {
@@ -239,8 +262,8 @@ body{
   margin: 0;
 }
 
-.project-links {
-  float: right;
+.project_github {
+  margin-top: 10px;;
 }
 
 .modal-content {
@@ -248,13 +271,18 @@ body{
 }
 
 .modal-title {
-  font-size: 25px;
   color: var(--dark);
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.modal-body h4 {
+  text-align: right;
+  margin-right: 5%;
 }
 
 
 .modal-description {
-  padding: 20px;
+  padding: 30px;
 }
 
 .modal-dialog {
