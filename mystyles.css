@@ -68,6 +68,8 @@ body{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   color: var(--primary);
+  transform: translateY(50vh);
+  visibility: visible;
 }
 
 @keyframes arrow {
@@ -387,6 +389,10 @@ body{
   .dropdown {
     visibility: visible;
     
+  }
+
+  .arrow {
+    visibility: hidden;
   }
 }
 
