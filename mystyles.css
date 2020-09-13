@@ -43,9 +43,6 @@ body{
   display: none;
 }
 
-.nav-link {
-  font-size: 20px;
-}
 
 /* HOME PAGE STYLING */
 #home{
@@ -71,7 +68,6 @@ body{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   color: var(--primary);
-  transform: translateY(40vh);
 }
 
 @keyframes arrow {
@@ -94,11 +90,12 @@ body{
 
 .profile-card {
   background-color: var(--secondary);
-  margin-left: 40%;
-  margin-top: 10%;
-  width: 300px;
+  right: -10%;
+  margin-left: 25%;
   z-index: 5;
   position: absolute;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .profile-card hr{
