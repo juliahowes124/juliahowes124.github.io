@@ -65,7 +65,7 @@ body{
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: rgb(145, 145, 145);
+  color: var(--dark);
 }
 
 @keyframes arrow {
@@ -164,6 +164,17 @@ body{
   box-sizing: border-box;
 }
 
+.technologies {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.technologies img {
+  height: 40px;
+  width: auto
+}
+
 .content {
   position: relative;
   width: 90%;
@@ -173,7 +184,7 @@ body{
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(122, 120, 120, 0.7);
   position: absolute;
   height: 400px;
   width: 100%;
@@ -232,7 +243,7 @@ body{
 
 
 .project-button {
-  background-color: #4f9ce4;
+  background-color: black;
   color: white;
 }
 
