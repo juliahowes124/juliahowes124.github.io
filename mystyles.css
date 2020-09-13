@@ -43,12 +43,16 @@ body{
   display: none;
 }
 
+.nav-link {
+  font-size: 20px;
+}
+
 /* HOME PAGE STYLING */
 #home{
   display: block;
   text-align: center;
   padding: 10%;
-  background: url(images/background.png) no-repeat;
+  background: url(images/background.jpg) no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   background-position: 10%;
@@ -59,13 +63,15 @@ body{
   color: var(--dark);
 }
 
+
 .arrow {
   animation-name: arrow;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: var(--dark);
+  color: var(--primary);
+  transform: translateY(40vh);
 }
 
 @keyframes arrow {
@@ -89,7 +95,7 @@ body{
 .profile-card {
   background-color: var(--secondary);
   transform: translate(55%, 10%);
-  width: 70%;
+  width: 300px;
   z-index: 5;
   position: absolute;
 }
@@ -101,7 +107,7 @@ body{
 .bio {
   padding: 2%;
   margin-top: 20%;
-  margin-left: 10%;
+  margin-left: 10vw;
   width: 50%;
   background: transparent;
 }
@@ -112,6 +118,24 @@ body{
 
 .bio p {
   width: 110%;
+}
+
+.card-body-profile i:hover {
+  transform: scale(1.1);
+  transition-duration: .25s;
+}
+
+.bio a{
+  float: right;
+  background-color: var(--accent);
+  color: white;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.bio a:hover{
+  background-color: rgb(20, 58, 10);
+  transition-duration: .25s;
 }
 
 .card-body-profile {
@@ -131,7 +155,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-  width: 200px;
+  width: 60%;
   height: auto;
   border-radius: 50%;
 }
@@ -144,6 +168,12 @@ body{
 /* PROJECTS SECTION STYLING*/
 #projects {
   background-color: white;
+}
+
+.project-button:hover{
+  background-color: rgb(20, 58, 10);
+  transition-duration: .25s;
+  color: white;
 }
 
 #projects h1 {
@@ -243,7 +273,7 @@ body{
 
 
 .project-button {
-  background-color: black;
+  background-color: var(--accent);
   color: white;
 }
 
@@ -257,15 +287,6 @@ body{
   top: 80%;
 }
 
-#goToLink {
-  position: relative;
-  translate: 50px;
-}
-
-#projectComp {
-  width: 90%;
-  margin-left: 5%;
-}
 
 .jumbotron-projects {
   color: black;
@@ -277,69 +298,9 @@ body{
   margin-top: 10px;;
 }
 
-.modal-content {
-  background-color: white;
-}
-
-.modal-title {
-  color: var(--dark);
-  margin-left: 30px;
-  margin-right: 10px;
-}
-.modal-body h4 {
-  text-align: right;
-  margin-right: 5%;
-}
-
-
-.modal-description {
-  padding: 30px;
-}
-
-.modal-dialog {
-  max-width: 700px;
-}
-
-/* RESUME */
-
-.progress{
-  margin-bottom: 10px;
-  width: 80%;
-  height: 25px;
-}
-
-.progress-bar {
-  background-color: rgb(66, 179, 179);
-}
-
-#barTitle {
-  background-color: rgb(115, 199, 188);
-}
-
-.experience {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.card-experience{
-  margin-top: 5px;
-}
-
-.skills {
-  margin-top: 5%;
-  margin-left: 10%;
-}
-.skills-title {
-  margin-top: 10%;
-  text-align: center;
-}
-
-
-
-
 
 /* MOBILE STYLING */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
 
   .full-height {
     height: auto;
@@ -374,7 +335,7 @@ body{
   }
 
   .profile-card {
-    width: 90%;
+    width: 90vw;
     margin-left: 5%;
     position: relative;
     transform: translate(2.5%, 30px);
