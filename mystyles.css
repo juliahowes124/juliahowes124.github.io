@@ -275,11 +275,10 @@ body{
 }
 
 
-
-
 .project-button {
   background-color: var(--accent);
   color: white;
+  margin-bottom: 2px;
 }
 
 .web-img {
