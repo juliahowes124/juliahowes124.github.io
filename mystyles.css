@@ -130,7 +130,7 @@ body{
   transition-duration: .25s;
 }
 
-.bio a{
+.resume{
   float: right;
   background-color: var(--accent);
   color: white;
@@ -138,7 +138,7 @@ body{
   border-radius: 3px;
 }
 
-.bio a:hover{
+.resume:hover{
   background-color: rgb(20, 58, 10);
   transition-duration: .25s;
 }
