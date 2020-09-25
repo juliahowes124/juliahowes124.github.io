@@ -35,6 +35,7 @@ body{
 .navbar {
   width: 10%;
   position: fixed;
+  display: flex;
   z-index: 1000;
   font-size: large;
 }
@@ -46,6 +47,19 @@ body{
 .navbar-toggler {
   visibility: hidden;
 }
+
+/* $(function(){
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      var os = $('#div1').offset().top; // pixels to the top of div1
+      var ht = $('#div1').height(); // height of div1 in pixels
+      // if you've scrolled further than the top of div1 plus it's height
+      // change the color. either by adding a class or setting a css property
+      if(scroll > os + ht){
+          $('#div2').addClass('blue');
+      }
+  });
+}); */
 
 
 /* HOME PAGE STYLING */
@@ -62,10 +76,23 @@ body{
 #home h1{
   text-align: center;
   color: var(--dark);
+  margin-bottom: 5%;
 }
 
+#home a{
+  background-color: var(--accent);
+  color: white;
+  padding: 7px;
+  border-radius: 3px;
+}
 
-.arrow {
+#home a:hover{
+  background-color: rgb(10, 40, 58);
+  transition-duration: .25s;
+  text-decoration: none;
+}
+
+/* .arrow {
   animation-name: arrow;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -86,7 +113,7 @@ body{
   100% {
     margin-top: 0px;
   }
-}
+} */
 
 /* ABOUT PAGE STYLING */
 
@@ -139,8 +166,10 @@ body{
 }
 
 .resume:hover{
-  background-color: rgb(20, 58, 10);
+  background-color: rgb(10, 40, 58);
   transition-duration: .25s;
+  color: white;
+  text-decoration: none;
 }
 
 .card-body-profile {
@@ -176,7 +205,7 @@ body{
 }
 
 .project-button:hover{
-  background-color: rgb(20, 58, 10);
+  background-color: rgb(10, 40, 58);
   transition-duration: .25s;
   color: white;
 }
@@ -351,7 +380,7 @@ body{
   }
 
   .navbar {
-    width: 10%;
+    width: 100%;
     position: fixed;
     transform: translateX(0%);
     z-index: 1000;
@@ -401,5 +430,10 @@ body{
 
   .arrow {
     transform: translateY(45vh);
+  }
+
+  .resume{
+    float: left;
+    margin-left: 10%;
   }
 }
