@@ -19,16 +19,15 @@ html {
   width: 100%;
 }
 
-
-body{
+body {
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .shadow {
-  -moz-box-shadow:    inset 0 0 10px #000000;
+  -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow:         inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 /* NAV BAR STYLING */
@@ -48,22 +47,8 @@ body{
   visibility: hidden;
 }
 
-/* $(function(){
-  $(window).scroll(function() {
-      var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-      var os = $('#div1').offset().top; // pixels to the top of div1
-      var ht = $('#div1').height(); // height of div1 in pixels
-      // if you've scrolled further than the top of div1 plus it's height
-      // change the color. either by adding a class or setting a css property
-      if(scroll > os + ht){
-          $('#div2').addClass('blue');
-      }
-  });
-}); */
-
-
 /* HOME PAGE STYLING */
-#home{
+#home {
   display: block;
   text-align: center;
   padding: 10%;
@@ -73,47 +58,24 @@ body{
   background-position: 10%;
 }
 
-#home h1{
+#home h1 {
   text-align: center;
   color: var(--dark);
   margin-bottom: 5%;
 }
 
-#home a{
+#home a {
   background-color: var(--accent);
   color: white;
   padding: 7px;
   border-radius: 3px;
 }
 
-#home a:hover{
+#home a:hover {
   background-color: rgb(10, 40, 58);
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   text-decoration: none;
 }
-
-/* .arrow {
-  animation-name: arrow;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  color: var(--primary);
-  transform: translateY(60vh);
-  visibility: visible;
-}
-
-@keyframes arrow {
-  0% {
-      margin-top: 0px;
-  }
-  50% {
-      margin-top: 10px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-} */
 
 /* ABOUT PAGE STYLING */
 
@@ -131,7 +93,7 @@ body{
   padding-bottom: 10%;
 }
 
-.profile-card hr{
+.profile-card hr {
   background-color: var(--accent);
 }
 
@@ -154,10 +116,10 @@ body{
 
 .card-body-profile i:hover {
   transform: scale(1.1);
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
-.resume{
+.resume {
   float: right;
   background-color: var(--accent);
   color: white;
@@ -165,9 +127,9 @@ body{
   border-radius: 3px;
 }
 
-.resume:hover{
+.resume:hover {
   background-color: rgb(10, 40, 58);
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   color: white;
   text-decoration: none;
 }
@@ -194,19 +156,19 @@ body{
   border-radius: 50%;
 }
 
-.mobile-bio, .mobile-about {
+.mobile-bio,
+.mobile-about {
   visibility: hidden;
 }
-
 
 /* PROJECTS SECTION STYLING*/
 #projects {
   background-color: white;
 }
 
-.project-button:hover{
+.project-button:hover {
   background-color: rgb(10, 40, 58);
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   color: white;
 }
 
@@ -220,11 +182,13 @@ body{
   width: 70%;
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -236,7 +200,7 @@ body{
 
 .technologies img {
   height: 40px;
-  width: auto
+  width: auto;
 }
 
 .content {
@@ -261,10 +225,10 @@ body{
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-.content:hover .content-overlay{
+.content:hover .content-overlay {
   opacity: 1;
 }
-.content-image{
+.content-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -285,12 +249,12 @@ body{
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.content:hover .content-details{
+.content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
-.content-details h3{
+.content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -298,11 +262,10 @@ body{
   text-transform: uppercase;
 }
 
-.content-details p{
+.content-details p {
   color: #fff;
   font-size: 15px;
 }
-
 
 .project-button {
   background-color: var(--accent);
@@ -316,10 +279,9 @@ body{
   margin-bottom: 5%;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
-
 
 .jumbotron-projects {
   color: black;
@@ -328,13 +290,27 @@ body{
 }
 
 .project_github {
-  margin-top: 10px;;
+  margin-top: 10px;
 }
 
+/* Contact Section */
+#contact {
+  background-color: var(--primary);
+  padding: 2rem;
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_icons i:hover {
+  transform: scale(1.1);
+  transition-duration: 0.25s;
+}
 
 /* MOBILE STYLING */
 @media screen and (max-width: 650px) {
-
   .full-height {
     height: auto;
     width: 100%;
@@ -351,7 +327,6 @@ body{
   .navbar-toggler {
     visibility: visible;
   }
-  
 
   .mobile-about {
     visibility: visible;
@@ -414,7 +389,6 @@ body{
     background-color: white;
   }
 
-  
   #home h1 {
     margin-top: 50%;
   }
@@ -425,14 +399,13 @@ body{
 
   .dropdown {
     visibility: visible;
-    
   }
 
   .arrow {
     transform: translateY(45vh);
   }
 
-  .resume{
+  .resume {
     float: left;
     margin-left: 10%;
   }
