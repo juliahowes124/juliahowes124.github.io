@@ -222,6 +222,7 @@ body {
 .contact_icons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact_icons i {
@@ -241,7 +242,7 @@ body {
   .profile-card {
     position: static;
     width: 100%;
-    margin-left: 5%;
+    margin: 5% 0 0 2.5%;
   }
   .full-height {
     height: auto;
@@ -259,6 +260,16 @@ body {
     height: 80%;
   }
 
+  .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .content-overlay {
+    opacity: 1;
+  }
+
   .projects-section {
     margin-top: 20%;
     height: 100%;
@@ -267,10 +278,17 @@ body {
   #home {
     height: 100vh;
     background-position: 70%;
+    background: url(images/lightbulb_small.jpg) no-repeat;
+    background-attachment: relative;
+    background-size: cover;
   }
 
   #home h1 {
     margin-top: 30%;
+  }
+
+  .bio {
+    text-align: center;
   }
 
   .resume {
