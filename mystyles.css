@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
 
@@ -32,91 +32,68 @@ body {
 
 /* NAV BAR STYLING */
 .navbar {
-  width: 10%;
+  width: 100%;
   position: fixed;
   display: flex;
   z-index: 1000;
   font-size: large;
 }
 
-.nav-mobile {
-  display: none;
-}
-
-.navbar-toggler {
-  visibility: hidden;
-}
-
 /* HOME PAGE STYLING */
 #home {
-  display: block;
-  text-align: center;
   padding: 10%;
-  background: url(images/background.png) no-repeat;
+  background: url(images/lightbulb.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: 10%;
-}
-
-#home h1 {
   text-align: center;
   color: var(--dark);
-  margin-bottom: 5%;
 }
 
-#home a {
-  background-color: var(--accent);
-  color: white;
-  padding: 7px;
-  border-radius: 3px;
+.arrow {
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: var(--dark);
+  visibility: visible;
 }
-
-#home a:hover {
-  background-color: rgb(10, 40, 58);
-  transition-duration: 0.25s;
-  text-decoration: none;
+@keyframes arrow {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 
 /* ABOUT PAGE STYLING */
-
-.col-sm-4 {
+.about-column {
+  width: 80%;
+  height: 100%;
   background-color: var(--primary);
 }
 
 .profile-card {
   background-color: var(--secondary);
-  right: -10%;
-  margin-left: 25%;
-  z-index: 5;
   position: absolute;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.profile-card hr {
-  background-color: var(--accent);
+  left: 35%;
+  top: 7rem;
+  width: 60%;
 }
 
 .bio {
-  padding: 2%;
   margin-top: 20%;
-  width: 50%;
+  width: 80%;
   background: transparent;
-  position: absolute;
-  margin-left: 10%;
 }
 
 .bio hr {
   background-color: var(--accent);
-}
-
-.bio p {
-  width: 110%;
-}
-
-.card-body-profile i:hover {
-  transform: scale(1.1);
-  transition-duration: 0.25s;
 }
 
 .resume {
@@ -134,62 +111,34 @@ body {
   text-decoration: none;
 }
 
-.card-body-profile {
+.card-body {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.col {
-  height: 100%;
-  width: 100;
+  margin: 0 auto 2rem;
+  padding: 0;
 }
 
 .profile-pic {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
+  margin: 2rem auto;
   width: 60%;
-  height: auto;
   border-radius: 50%;
 }
 
-.mobile-bio,
-.mobile-about {
-  visibility: hidden;
+/* PROJECTS SECTION STYLING*/
+
+#projects {
+  padding-top: 3rem;
 }
 
-/* PROJECTS SECTION STYLING*/
-#projects {
-  background-color: white;
+#projects hr {
+  background-color: var(--accent);
+  margin: 2rem 0 0 15%;
+  width: 70%;
 }
 
 .project-button:hover {
   background-color: rgb(10, 40, 58);
   transition-duration: 0.25s;
   color: white;
-}
-
-#projects h1 {
-  transform: translateY(30px);
-}
-
-#projects hr {
-  background-color: var(--accent);
-  margin: 50px 0 0 15%;
-  width: 70%;
-}
-
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .technologies {
@@ -200,7 +149,6 @@ body {
 
 .technologies img {
   height: 40px;
-  width: auto;
 }
 
 .content {
@@ -221,8 +169,6 @@ body {
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
 .content:hover .content-overlay {
@@ -242,11 +188,7 @@ body {
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 .content:hover .content-details {
@@ -264,7 +206,7 @@ body {
 
 .content-details p {
   color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .project-button {
@@ -273,24 +215,17 @@ body {
   margin-bottom: 2px;
 }
 
-.web-img {
-  width: 100%;
-  object-fit: scale-down;
-  margin-bottom: 5%;
-}
-
 .fadeIn-bottom {
   top: 80%;
 }
 
-.jumbotron-projects {
-  color: black;
-  background-color: transparent;
-  margin: 0;
+.projects-row {
+  height: 100%;
+  margin-top: 10%;
 }
 
-.project_github {
-  margin-top: 10px;
+.container h1 {
+  text-align: center;
 }
 
 /* Contact Section */
@@ -304,13 +239,25 @@ body {
   justify-content: center;
 }
 
+.contact_icons i {
+  color: white;
+}
+
 .contact_icons i:hover {
   transform: scale(1.1);
   transition-duration: 0.25s;
 }
 
 /* MOBILE STYLING */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  .about-column {
+    display: none;
+  }
+  .profile-card {
+    position: static;
+    width: 100%;
+    margin-left: 5%;
+  }
   .full-height {
     height: auto;
     width: 100%;
@@ -320,52 +267,12 @@ body {
     height: 100vh;
   }
 
-  .display-4 {
-    font-size: 2.5rem;
-  }
-
-  .navbar-toggler {
-    visibility: visible;
-  }
-
-  .mobile-about {
-    visibility: visible;
-    background-color: transparent;
-    text-align: center;
-    transform: translate(10px, 30px);
-  }
-
-  .mobile-bio {
-    visibility: visible;
-    margin-left: 5%;
-    margin-top: 20%;
-    padding: 10px;
-    position: relative;
-  }
-
   .bio {
-    display: none;
-  }
-
-  .profile-card {
-    width: 90vw;
-    margin-left: -6%;
-    position: relative;
-    transform: translate(2.5%, 30px);
-  }
-
-  .navbar {
     width: 100%;
-    position: fixed;
-    transform: translateX(0%);
-    z-index: 1000;
+    margin-top: 0;
+    padding: 5%;
   }
-  .nav-mobile {
-    display: flex;
-  }
-  .nav-large {
-    display: none;
-  }
+
   .content {
     width: 80%;
     height: 80%;
@@ -385,28 +292,11 @@ body {
     background-position: 60%, 20%;
   }
 
-  .col-sm-4 {
-    background-color: white;
-  }
-
   #home h1 {
     margin-top: 50%;
   }
 
-  .nav-big-link {
-    visibility: hidden;
-  }
-
-  .dropdown {
-    visibility: visible;
-  }
-
-  .arrow {
-    transform: translateY(45vh);
-  }
-
   .resume {
     float: left;
-    margin-left: 10%;
   }
 }

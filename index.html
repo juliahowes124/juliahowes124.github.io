@@ -1,150 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="mystyles.css">
-
-    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="mystyles.css" />
 
     <title>Julia Howes</title>
-    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="navbar-nav nav-mobile" data-toggle="collapse" data-target=#navbarNavDropdown>
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
-        </div>
-        <div class="navbar-nav nav-large">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-        </div>
-      </nav>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<!-- HOME PAGE -->
+    <!-- HOME PAGE -->
     <div class="full-height" id="home">
-        <h1 class="display-4">Julia Howes</h1>
-        <a href="#projects">See my work.</a>
+      <h1>Julia Howes</h1>
+      <a href="#about"><i class="fa fa-chevron-down arrow"></i></a>
     </div>
 
-<!-- ABOUT PAGE -->
+    <!-- ABOUT PAGE -->
     <div class="row full-height" id="about">
-                <div class="col-sm-4" style="position: relative">
-                    <h1 class="display-4 mobile-about">About Me</h1>
-                    <div class="card profile-card shadow">
-                        <img src="images/profile-pic.png" alt="Profile Pic" class="profile-pic">
-                        <div class="card-body card-body-profile">
-                            <h3>Julia Howes</h3>
-                            <p>Los Angeles, CA</p>
-                        </div>
-                    </div>
-                    <p class="mobile-bio">I am a biomedical engineering graduate turned software engineer. My most impactful experiences during University helped to expose my appreciation for software and inspire a career shift, which I have pursued head-on since graduating in Spring 2020. I am eager to apply what I love doing to challenging and innovative projects that improve the lives of others.
-                    </p>
-                    <a  class="resume" href="./assets/HowesResume_Jan.pdf" target="_blank">
-                        Resume
-                        <i class="fa fa-file ml-1"></i>
-                    </a>
-                </div>
-
-                <div class="col-sm-8" style="background-color: white">
-                    <div class="jumbotron bio">
-                            <h1 class="display-4">About Me</h1>
-                            <hr class="my-4">
-                            <p>I am a biomedical engineering graduate turned software engineer. My most impactful experiences during University helped to expose my appreciation for software and inspire a career shift, which I have pursued head-on since graduating in Spring 2020. I am eager to apply what I love doing to challenging and innovative projects that improve the lives of others.
-                            </p>
-                            <a class="resume" href="./assets/HowesResume_Jan.pdf" target="_blank">
-                                Resume
-                                <i class="fa fa-file ml-1"></i>
-                            </a>
-                    </div>
-                </div>
+      <div class="col-md-5">
+        <div class="about-column"></div>
+        <div class="card profile-card shadow">
+          <img
+            src="images/profile-pic.png"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <div class="card-body">
+            <h3>Julia Howes</h3>
+            <p>Los Angeles, CA</p>
+            <div class="contact_icons">
+              <a
+                href="http://www.linkedin.com/in/julia-howes/"
+                target="”_blank”"
+                ><i
+                  class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2"
+                  style="color: #0072b1"
+                ></i
+              ></a>
+              <a href="https://github.com/juliahowes124" target="”_blank”"
+                ><i
+                  class="fa fa-github fa-2x ml-3 mr-3 mb-2"
+                  style="color: black"
+                ></i
+              ></a>
+              <a href="https://www.instagram.com/code_jules/" target="”_blank”"
+                ><i
+                  class="fa fa-instagram fa-2x ml-3 mr-3 mb-2"
+                  style="color: #c13584"
+                ></i
+              ></a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="bio">
+          <h1>About Me</h1>
+          <hr />
+          <p>
+            I am a biomedical engineering graduate turned software engineer. My
+            most impactful experiences during University helped to expose my
+            appreciation for software and inspire a career shift, which I have
+            pursued head-on since graduating in Spring 2020. I am eager to apply
+            what I love doing to challenging and innovative projects that
+            improve the lives of others.
+          </p>
+          <a class="resume" href="./assets/HowesResume_Jan.pdf" target="_blank">
+            Resume
+            <i class="fa fa-file ml-1"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-<!-- PROJECTS PAGE -->
+    <!-- PROJECTS PAGE -->
     <div class="full-height" id="projects">
-        <div class="container">
-            <h1 class="display-4" style="text-align: center;">Projects</h1>
-            <hr>
-            <div class="row" style="height: 100%; margin-top: 10%;">
-                <div class="col-md-6">
-                    <div class="content">
-                        <div class="content-overlay"></div>
-                        <img class="content-image image-pet" src="images/Koda.png">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">PetNet</h3>
-                            <p>A peer-to-peer platform where pet owners looking to rehome their pet can connect with prospective adopters.</p>
-                            <a class="btn project-button" href="https://github.com/juliahowes124/PetApp#feature-demos" target="_blank">
-                                Demos
-                                <i class="fa fa-play-circle fa-lg"></i>
-                            </a>
-                            <a class="btn project-button" href="https://github.com/juliahowes124/PetApp" target="_blank">
-                                Repo
-                                <i class="fa fa-github fa-lg"></i>
-                            </a>
-                            <div class="technologies">
-                                <img src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg" alt=""> 
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png" alt="">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/382px-SQLite370.svg.png" alt="">
-                            </div>
-                            
-                                
-                               
-                        </div>
-                    </div>
+      <div class="container">
+        <h1>Projects</h1>
+        <hr />
+        <div class="row projects-row">
+          <div class="col-md-6">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img
+                class="content-image image-pet"
+                src="images/Koda.png"
+                alt="Cat image"
+              />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">PetNet</h3>
+                <p>
+                  A peer-to-peer platform where pet owners looking to rehome
+                  their pet can connect with prospective adopters.
+                </p>
+                <a
+                  class="btn project-button"
+                  href="https://github.com/juliahowes124/PetApp#feature-demos"
+                  target="_blank"
+                >
+                  Demos
+                  <i class="fa fa-play-circle fa-lg"></i>
+                </a>
+                <a
+                  class="btn project-button"
+                  href="https://github.com/juliahowes124/PetApp"
+                  target="_blank"
+                >
+                  Repo
+                  <i class="fa fa-github fa-lg"></i>
+                </a>
+                <div class="technologies">
+                  <img
+                    src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg"
+                    alt="Angular"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png"
+                    alt="ASP.NET Core"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/382px-SQLite370.svg.png"
+                    alt="SQLite"
+                  />
                 </div>
-
-                <div class="col-md-6">
-                    <div class="content">
-                        <div class="content-overlay"></div>
-                        <img class="content-image" src="images/goldengate.png">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Travel App</h3>
-                            <p>A social app to share travel experiences.</p>
-                            <a class="button" id="goToLink" href="#popup2"></a>
-                            <a class="btn project-button" href="https://github.com/juliahowes124/TravelApp/#feature-demos" target="_blank">
-                                Demos
-                                <i class="fa fa-play-circle fa-lg"></i>
-                            </a>
-                            <a class="btn project-button" href="https://github.com/juliahowes124/TravelApp" target="_blank">
-                                Repo
-                                <i class="fa fa-github fa-lg"></i>
-                            </a>
-                            <div class="technologies">  
-                                    <img src="https://jasonpallone.com/React-icon.png" alt="">   
-                                    <img src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png" alt=""> 
-                                    <img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" alt=""> 
-                            </div>
-                        </div>
-                        
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img
+                class="content-image"
+                src="images/goldengate.png"
+                alt="golden gate bridge"
+              />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Travel App</h3>
+                <p>A social app to share travel experiences.</p>
+                <a class="button" id="goToLink" href="#popup2"></a>
+                <a
+                  class="btn project-button"
+                  href="https://github.com/juliahowes124/TravelApp/#feature-demos"
+                  target="_blank"
+                >
+                  Demos
+                  <i class="fa fa-play-circle fa-lg"></i>
+                </a>
+                <a
+                  class="btn project-button"
+                  href="https://github.com/juliahowes124/TravelApp"
+                  target="_blank"
+                >
+                  Repo
+                  <i class="fa fa-github fa-lg"></i>
+                </a>
+                <div class="technologies">
+                  <img
+                    src="https://jasonpallone.com/React-icon.png"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png"
+                    alt="Node JS"
+                  />
+                  <img
+                    src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"
+                    alt="Mongo DB"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div id="contact">
-        <div class="contact_icons">
-            <a href="http://www.linkedin.com/in/julia-howes/" target=”_blank”><i class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2" style="color: white"></i></a>
-            <a href="https://github.com/juliahowes124" target=”_blank”><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: white"></i></a>
-            <a href="mailto: julia.howes@gmail.com" target=”_blank”><i class="fa fa-envelope-o fa-2x ml-3 mr-3 mb-2" style="color: white"></i></a>
-            <a href="https://www.instagram.com/code_jules/" target=”_blank”><i class="fa fa-instagram fa-2x ml-3 mr-3 mb-2" style="color: white"></i></a>
-        </div>
+      <div class="contact_icons">
+        <a href="http://www.linkedin.com/in/julia-howes/" target="”_blank”"
+          ><i
+            class="fa fa-linkedin fa-2x ml-3 mr-3 mb-2"
+            style="color: white"
+          ></i
+        ></a>
+        <a href="https://github.com/juliahowes124" target="”_blank”"
+          ><i class="fa fa-github fa-2x ml-3 mr-3 mb-2" style="color: white"></i
+        ></a>
+        <a href="mailto: julia.howes@gmail.com" target="”_blank”"
+          ><i
+            class="fa fa-envelope-o fa-2x ml-3 mr-3 mb-2"
+            style="color: white"
+          ></i
+        ></a>
+        <a href="https://www.instagram.com/code_jules/" target="”_blank”"
+          ><i
+            class="fa fa-instagram fa-2x ml-3 mr-3 mb-2"
+            style="color: white"
+          ></i
+        ></a>
+      </div>
     </div>
-    </body>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
