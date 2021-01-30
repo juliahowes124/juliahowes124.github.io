@@ -6,7 +6,7 @@
   --primary: #dfceba;
   --secondary: #e4dcd0;
   --dark: #353333;
-  --accent: #35727b;
+  --accent: #348493;
 }
 
 html {
@@ -112,7 +112,7 @@ body {
 }
 
 .resume:hover {
-  background-color: rgb(10, 40, 58);
+  background-color: #22525a;
   transition-duration: 0.25s;
   color: white;
   text-decoration: none;
@@ -136,7 +136,7 @@ body {
 }
 
 .project-button:hover {
-  background-color: rgb(10, 40, 58);
+  background-color: #22525a;
   transition-duration: 0.25s;
   color: white;
 }
