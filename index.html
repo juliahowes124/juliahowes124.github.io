@@ -25,13 +25,18 @@
   <body>
     <!-- NAV BAR -->
     <div class="nav" id="nav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
-        >&#9776;</a
-      >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a class="menu-button" onclick="toggleMenu()">
+        <div class="menu-icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
 
     <!-- HOME PAGE -->
@@ -98,7 +103,7 @@
           </p>
           <a class="resume" href="./assets/HowesResume_Jan.pdf" target="_blank">
             Resume
-            <i class="fa fa-file ml-1"></i>
+            <i class="fa fa-download ml-1"></i>
           </a>
         </div>
       </div>
@@ -231,12 +236,27 @@
       </div>
     </div>
     <script>
-      function myFunction() {
-        var x = document.getElementById("nav");
+      let links = document.getElementsByClassName("nav-link");
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active")[0];
+          current.className = current.className.replace(" active", "");
+          this.className += " active";
+          toggleMenu();
+        });
+      }
+      function toggleMenu() {
+        let x = document.getElementById("nav");
         if (x.className === "nav") {
           x.className += " responsive";
         } else {
           x.className = "nav";
+        }
+        let y = document.getElementById("menu-icon");
+        if (y.className === "menu-icon") {
+          y.className += " is-active";
+        } else {
+          y.className = "menu-icon";
         }
       }
     </script>

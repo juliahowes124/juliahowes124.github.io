@@ -30,10 +30,65 @@ body {
 }
 
 /* NAV BAR STYLING */
-.navbar {
+
+.nav {
+  overflow: hidden;
   position: fixed;
-  font-size: large;
   z-index: 5;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: gray;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav a.active {
+  color: var(--dark);
+}
+
+.nav .menu-button {
+  padding: 1rem 1rem 0;
+  display: none;
+}
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.menu-icon span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--dark);
+  transition: all 250ms ease-in-out;
+}
+
+.menu-icon span:nth-child(2),
+.menu-icon span:nth-child(3) {
+  top: 10px;
+}
+.menu-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.menu-icon.is-active span:nth-child(1),
+.menu-icon.is-active span:nth-child(4) {
+  opacity: 0;
+}
+
+.menu-icon.is-active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu-icon.is-active span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 /* HOME PAGE STYLING */
@@ -241,6 +296,22 @@ body {
     width: 100%;
   }
 
+  .nav a {
+    display: none;
+  }
+  .nav a.menu-button {
+    display: block;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.responsive {
+    display: block;
+    text-align: left;
+  }
+
   #home {
     height: 100vh;
     background-position: 70%;
@@ -260,7 +331,7 @@ body {
   .profile-card {
     position: static;
     width: 90%;
-    margin: 5% 0 0 5%;
+    margin: 5% 0 0 10%;
   }
 
   .bio {
@@ -268,10 +339,6 @@ body {
     margin-top: 1rem;
     padding: 5%;
     text-align: center;
-  }
-
-  .resume {
-    float: left;
   }
 
   .projects-section {
@@ -292,53 +359,5 @@ body {
 
   .content-overlay {
     opacity: 1;
-  }
-}
-
-/* Add a black background color to the top navigation */
-.nav {
-  background-color: transparent;
-  overflow: hidden;
-  position: fixed;
-  z-index: 5;
-}
-
-/* Style the links inside the navigation bar */
-.nav a {
-  float: left;
-  display: block;
-  color: gray;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #4caf50;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.nav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 750px) {
-  .nav a {
-    display: none;
-  }
-  .nav a.icon {
-    display: block;
-  }
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .nav.responsive {
-    display: block;
-    text-align: left;
   }
 }
