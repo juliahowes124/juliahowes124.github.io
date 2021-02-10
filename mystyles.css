@@ -179,9 +179,11 @@ body {
   text-align: center;
 }
 
-.projects-row {
-  height: 100%;
-  margin-top: 10%;
+.projects-div {
+  margin: 10% auto 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #projects hr {
@@ -208,9 +210,9 @@ body {
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
+  height: 300px;
+  width: 300px;
+  margin: 1rem;
   overflow: hidden;
 }
 
