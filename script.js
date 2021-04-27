@@ -4,35 +4,33 @@ function fillProjects() {
   for (let project of projects) {
     $projectsDiv.append(`
     <div class="content ${project.class}">
-      <div class="content-overlay"></div>
+        <div class="content-overlay"></div>
         <img class="content-image" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" />
               <div class="content-details">
-                <h3 class="content-title">${project.name}</h3>
-                <p>
-                  ${project.description}
-                </p>
-                <a
-                  class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
-                  href="${project.demoLink}"
-                  target="_blank"
-                >
-                  Demos
-                  <i class="fa fa-play-circle fa-lg"></i>
-                </a>
-                <a
-                  class="btn project-button"
-                  href="${project.githubLink}"
-                  target="_blank"
-                >
-                  Repo
-                  <i class="fa fa-github fa-lg"></i>
-                </a>
-                <div class="technologies">
-                  ${project.tools.map((t) => {
-                    return `<img src="${t.url}" alt="${t.tool}"></img>`
-                    })}
+                  <h3 class="content-title">${project.name}</h3>
+                  <p class="content-description">
+                    ${project.description}
+                  </p>
+                  <div class="technologies">
+                  <p>
+                  ${project.tools.map(t => t)}
+                  </p>
+                  </div>
+                  <a
+                    class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
+                    href="${project.demoLink}"
+                    target="_blank"
+                  >
+                    <i class="fa fa-play-circle fa-lg"></i>
+                  </a>
+                  <a
+                    class="btn project-button"
+                    href="${project.githubLink}"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
                 </div>
-              </div>
             </div>
     
     
@@ -63,19 +61,7 @@ const projects = [
 pet can connect with prospective adopters.`,
     demoLink: "https://github.com/juliahowes124/PetApp#feature-demos",
     githubLink: "https://github.com/juliahowes124/PetApp",
-    tools: [{
-      tool: "Angular",
-      url: TOOL_IMAGES.angular
-    },
-    {
-      tool: "ASP.NET Core",
-      url: TOOL_IMAGES.aspnet
-    },
-    {
-      tool: "SQLite",
-      url: TOOL_IMAGES.sqlite
-    }
-    ]
+    tools: ["Angular", "ASP.NET Core", "SQLite"]
   },
 
   {
@@ -86,19 +72,7 @@ pet can connect with prospective adopters.`,
     description: `A social app to share travel experiences.`,
     demoLink: "https://github.com/juliahowes124/TravelApp/#feature-demos",
     githubLink: "https://github.com/juliahowes124/TravelApp",
-    tools: [{
-      tool: "React",
-      url: TOOL_IMAGES.react
-    },
-    {
-      tool: "Node.js",
-      url: TOOL_IMAGES.node
-    },
-    {
-      tool: "MongoDB",
-      url: TOOL_IMAGES.mongodb
-    }
-    ]
+    tools: ["React", "Node/Express", "MongoDB"]
   },
   {
     name: "Connect Four",
@@ -180,9 +154,6 @@ pet can connect with prospective adopters.`,
     githubLink: 'https://github.com/juliahowes124/DadJokes',
     tools: []
   }
-
-
-
 ];
 
 fillProjects();
