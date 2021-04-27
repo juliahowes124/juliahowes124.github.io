@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway-bold", sans-serif;
 }
 
 .shadow {
@@ -160,6 +160,9 @@ body {
 
 .bio hr {
   background-color: var(--accent);
+  height: 3px;
+  width: 50%;
+  margin-left: 0;
 }
 
 .resume {
@@ -181,23 +184,17 @@ body {
 #projects {
   padding-top: 3rem;
   text-align: center;
-  background-color: var(--dark);
+  background-color: var(--secondary);
 }
 
 #projects h1 {
-  color: white;
+  color: var(--dark);
 }
-
-/* .projects-div {
-  margin: 10% auto 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
 
 .projects-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, 25%);
+  margin: 1rem;
 }
 
 .big-1 {
@@ -211,15 +208,17 @@ body {
 }
 
 #projects hr {
-  background-color: white;
-  margin: 2rem auto;
-  width: 70%;
+  background-color: var(--accent);
+  margin: 1rem auto 2rem;
+  width: 7%;
+  height: 4px;
 }
 
 .project-button:hover {
-  background-color: #22525a;
+  background-color: var(--accent);
   transition-duration: 0.25s;
   color: white;
+  transition: .5s;
 }
 
 .technologies {
@@ -237,7 +236,7 @@ body {
 }
 
 .content-overlay {
-  background: rgba(122, 120, 120, 0.7);
+  background: var(--secondary);
   position: absolute;
   /* height: 400px; */
   width: 100%;
@@ -258,11 +257,17 @@ body {
 }
 
 .content-title {
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 .content-description {
-  font-size: 1vw;
+  font-size: 1rem;
 }
+
+.content-tools {
+  color: var(--accent);
+  font-weight: bold;
+}
+
 .content-details {
   position: absolute;
   text-align: center;
@@ -280,21 +285,21 @@ body {
   opacity: 1;
 }
 .content-details h3 {
-  color: #fff;
+  color: var(--dark);
   letter-spacing: 0.25rem;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
 .content-details p {
-  color: #fff;
+  color: var(--dark);
   font-size: 1rem;
 }
 
 .project-button {
-  background-color: var(--accent);
-  color: white;
-  margin-bottom: 2px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  margin: 1rem;
 }
 
 /* Contact Section */
@@ -338,6 +343,11 @@ body {
 
 /* MOBILE STYLING */
 @media screen and (max-width: 768px) {
+
+  .bio hr {
+    margin-left: auto;
+    margin-right:auto;
+  }
 
   .projects-div {
     display: grid;
