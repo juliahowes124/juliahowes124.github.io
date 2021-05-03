@@ -4,6 +4,7 @@ function fillProjects() {
   for (let project of projects) {
     $projectsDiv.append(`
     <div class="content ${project.class}">
+      <a href=${project.githubLink}></a>
         <div class="content-overlay"></div>
         <img class="content-image" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" />
               <div class="content-details">
@@ -181,6 +182,44 @@ pet can connect with prospective adopters.`,
     githubLink: 'https://github.com/juliahowes124/DadJokes',
     tools: "jQuery / Axios"
   },
+  {
+    name: "Websocket Group Chat",
+    cols: '4',
+    fileName: 'websocket.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/Websocket-GroupChat',
+    tools: "Node.JS / Express"
+  },
+  {
+    name: "Lunch",
+    cols: '4',
+    fileName: 'lunch.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/Lunch',
+    tools: "Node.JS / Express / PostgreSQL"
+  },
+  {
+    name: "Lights Out",
+    cols: '4',
+    fileName: 'lights_out.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/Lights-Out',
+    tools: "React"
+  },
 ];
 
 fillProjects();
+window.addEventListener('resize', handleResize);
+
+function handleResize() {
+  if(window.innerWidth <= 768) {
+    $projectsDiv.delegate(".content", "click", openLink);
+  } else {
+    $projectsDiv.undelegate('.content', 'click', openLink);
+  }
+}
+
+function openLink() {
+  window.open($(this).find("a").attr("href"), '_blank');
+}
+
