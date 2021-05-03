@@ -75,7 +75,7 @@ pet can connect with prospective adopters.`,
     fileName: 'notes.gif',
     description: '',
     githubLink: 'https://github.com/juliahowes124/FlaskNotes',
-    tools: "PostreSQL / Flask"
+    tools: "Flask / PostreSQL / SQLAlchemy(ORM)"
   },
   {
     name: "Blogly",
@@ -83,7 +83,7 @@ pet can connect with prospective adopters.`,
     fileName: 'blogly.gif',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Blogly',
-    tools: "PostreSQL / SQLAlchemy (ORM) / Flask"
+    tools: "Flask / PostreSQL / SQLAlchemy(ORM)"
   },
   {
     name: "Adopt",
@@ -91,7 +91,7 @@ pet can connect with prospective adopters.`,
     fileName: 'adoptly.gif',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Adoptly',
-    tools: "PostreSQL / Flask / WTForms"
+    tools: "Flask / WTForms / PostreSQL"
   },
   {
     name: "Cupcakes",
@@ -102,20 +102,36 @@ pet can connect with prospective adopters.`,
     tools: "PostreSQL / Flask / jQuery"
   },
   {
-    name: "Connect 4",
+    name: "Websocket Group Chat",
     cols: '4',
-    fileName: 'ConnectFour.gif',
+    fileName: 'websocket.gif',
     description: '',
-    githubLink: 'https://github.com/juliahowes124/ConnectFour',
-    tools: "JavaScript / OOP"
+    githubLink: 'https://github.com/juliahowes124/Websocket-GroupChat',
+    tools: "Node.JS / Express"
   },
   {
-    name: "Hack Or Snooze",
-    cols: '6',
-    fileName: 'HackOrSnooze.gif',
+    name: "Lunch",
+    cols: '4',
+    fileName: 'lunch.gif',
     description: '',
-    githubLink: 'https://github.com/juliahowes124/HackOrSnooze',
-    tools: "jQuery / Axios"
+    githubLink: 'https://github.com/juliahowes124/Lunch',
+    tools: "Node.JS / Express / PostgreSQL"
+  },
+  {
+    name: "Lights Out",
+    cols: '4',
+    fileName: 'lights_out.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/Lights-Out',
+    tools: "React"
+  },
+  {
+    name: "Survey",
+    cols: '4',
+    fileName: 'survey.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/FlaskSurvey',
+    tools: "Flask / Jinja / Sessions"
   },
   {
     name: "Madlibs",
@@ -126,12 +142,20 @@ pet can connect with prospective adopters.`,
     tools: "Flask / Jinja / Sessions"
   },
   {
-    name: "Survey",
-    cols: '4',
-    fileName: 'survey.gif',
+    name: "Hack Or Snooze",
+    cols: '6',
+    fileName: 'HackOrSnooze.gif',
     description: '',
-    githubLink: 'https://github.com/juliahowes124/FlaskSurvey',
-    tools: "Flask / Jinja / Sessions"
+    githubLink: 'https://github.com/juliahowes124/HackOrSnooze',
+    tools: "jQuery / Axios"
+  },
+  {
+    name: "Connect 4",
+    cols: '4',
+    fileName: 'ConnectFour.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/ConnectFour',
+    tools: "JavaScript / OOP"
   },
   {
     name: "Boggle",
@@ -149,14 +173,6 @@ pet can connect with prospective adopters.`,
     githubLink: 'https://github.com/juliahowes124/MemeMaker',
     tools: "Vanilla JS",
     site: "https://unruffled-torvalds-a80a84.netlify.app"
-  },
-  {
-    name: "Growing Flower",
-    cols: '4',
-    fileName: 'GrowingFlower.gif',
-    description: '',
-    githubLink: 'https://github.com/juliahowes124/GrowingFlower',
-    tools: "CSS"
   },
   {
     name: "Giphy Party",
@@ -183,28 +199,12 @@ pet can connect with prospective adopters.`,
     tools: "jQuery / Axios"
   },
   {
-    name: "Websocket Group Chat",
+    name: "Growing Flower",
     cols: '4',
-    fileName: 'websocket.gif',
+    fileName: 'GrowingFlower.gif',
     description: '',
-    githubLink: 'https://github.com/juliahowes124/Websocket-GroupChat',
-    tools: "Node.JS / Express"
-  },
-  {
-    name: "Lunch",
-    cols: '4',
-    fileName: 'lunch.gif',
-    description: '',
-    githubLink: 'https://github.com/juliahowes124/Lunch',
-    tools: "Node.JS / Express / PostgreSQL"
-  },
-  {
-    name: "Lights Out",
-    cols: '4',
-    fileName: 'lights_out.gif',
-    description: '',
-    githubLink: 'https://github.com/juliahowes124/Lights-Out',
-    tools: "React"
+    githubLink: 'https://github.com/juliahowes124/GrowingFlower',
+    tools: "CSS"
   },
 ];
 

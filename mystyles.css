@@ -195,7 +195,8 @@ body {
 .projects-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, 25%);
-  margin: 1rem;
+  margin: 1rem auto;
+  max-width: 1200px;
 }
 
 .big-1 {
@@ -422,5 +423,9 @@ body {
 
   .content-details, .content-overlay {
     display: none;
+  }
+
+  #projects hr {
+    width: 40%;
   }
 }
