@@ -1,47 +1,55 @@
 $projectsDiv = $(".projects-div");
 
+{/* <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div> */}
+
 function fillProjects() {
   for (let project of projects) {
     $projectsDiv.append(`
-    <div class="content ${project.class}">
+    <div class="content ${project.class} card shadow">
       <a href=${project.githubLink}></a>
         <div class="content-overlay"></div>
-        <img class="content-image" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" />
-              <div class="content-details">
-                  <h3 class="content-title">${project.name}</h3>
-                  <div class="content-tools">${project.tools}</div>
-                  <div class="content-description">
-                    ${project.description}
-                  </div>
-                  <a
-                    class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
-                    href="${project.demoLink}"
-                    target="_blank"
-                  >
-                  Demos
-                    <i class="fa fa-play-circle fa-lg"></i>
-                  </a>
-                  <a
-                    class="btn ${project.site ? 'project-button' : 'hidden'}"
-                    href="${project.site}"
-                    target="_blank"
-                  >
-                  Site
-                    <i class="fa fa-external-link fa-lg"></i>
-                  </a>
-                  <a
-                    class="btn project-button"
-                    href="${project.githubLink}"
-                    target="_blank"
-                  >
-                  Repo
-                    <i class="fa fa-github fa-lg"></i>
-                  </a>
-                </div>
-            </div>
+        <div class="content-details">
+          <h3 class="content-title">${project.name}</h3>
+          <div class="content-tools">${project.tools}</div>
+          <div class="content-description">
+            ${project.description}
+          </div>
+          <a
+            class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
+            href="${project.demoLink}"
+            target="_blank"
+          >
+          Demos
+            <i class="fa fa-play-circle fa-lg"></i>
+          </a>
+          <a
+            class="btn ${project.site ? 'project-button' : 'hidden'}"
+            href="${project.site}"
+            target="_blank"
+          >
+          Site
+            <i class="fa fa-external-link fa-lg"></i>
+          </a>
+          <a
+            class="btn project-button"
+            href="${project.githubLink}"
+            target="_blank"
+          >
+          Repo
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          </div>
+        <img class="content-image card-img-top" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" />
+    </div>
     
     
     `)
+    // <h5 class="card-title project-card-title">${project.name}</h5>
   }
 }
 
@@ -86,6 +94,14 @@ pet can connect with prospective adopters.`,
     tools: "Flask / PostreSQL / SQLAlchemy(ORM)"
   },
   {
+    name: "Lights Out",
+    cols: '4',
+    fileName: 'lights_out.gif',
+    description: '',
+    githubLink: 'https://github.com/juliahowes124/Lights-Out',
+    tools: "React"
+  },
+  {
     name: "Adopt",
     cols: '4',
     fileName: 'adoptly.gif',
@@ -116,14 +132,6 @@ pet can connect with prospective adopters.`,
     description: '',
     githubLink: 'https://github.com/juliahowes124/Lunch',
     tools: "Node.JS / Express / PostgreSQL"
-  },
-  {
-    name: "Lights Out",
-    cols: '4',
-    fileName: 'lights_out.gif',
-    description: '',
-    githubLink: 'https://github.com/juliahowes124/Lights-Out',
-    tools: "React"
   },
   {
     name: "Survey",

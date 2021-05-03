@@ -196,7 +196,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 25%);
   margin: 1rem auto;
-  max-width: 1200px;
+  max-width: 2000px;
 }
 
 .big-1 {
@@ -428,4 +428,11 @@ body {
   #projects hr {
     width: 40%;
   }
+}
+
+.project-card-title {
+  background-color: var(--dark);
+  padding: 1rem;
+  color: white;
+  margin: 0;
 }
