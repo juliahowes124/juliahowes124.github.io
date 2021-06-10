@@ -106,6 +106,10 @@ body {
   color: var(--dark);
 }
 
+#home h1 {
+  font-size: 4.5rem;
+}
+
 .arrow {
   animation-name: arrow;
   animation-duration: 1s;
@@ -144,7 +148,7 @@ body {
 .card-body {
   text-align: center;
   margin: 0 auto 2rem;
-  padding: 0;
+  padding: .2rem;
 }
 
 .profile-pic {
@@ -194,7 +198,8 @@ body {
 
 .projects-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25%);
+  grid-template-columns: repeat(auto-fit, 25vw);
+  grid-template-rows: repeat(10, 25vw);
   margin: 1rem auto;
   max-width: 2000px;
 }
@@ -202,6 +207,37 @@ body {
 .big-1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+.big-1 .card-body .project-button{
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+.big-1 .card-body .card-title{
+  font-size: 2rem;
+}
+
+.big-1 .card-body .content-tools{
+  font-size: 1rem;
+}
+
+
+.content-tools {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+
+.card-title {
+  font-size: 1.3rem;
+}
+.project-button {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: .2rem;
+  margin: 0rem;
 }
 
 .big-2 {
@@ -253,26 +289,13 @@ body {
   opacity: 1;
 }
 .content-image {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  border-bottom: solid 2px var(--accent);
 }
 
-.content-title {
-  font-size: 1.5rem;
-}
-.content-description {
-  font-size: 1rem;
-}
-
-.content-tools {
-  color: var(--accent);
-  font-weight: bold;
-}
 
 .content-details {
   position: absolute;
-  text-align: center;
   padding: 0 1rem;
   width: 100%;
   top: 50%;
@@ -296,12 +319,6 @@ body {
 .content-details p {
   color: var(--dark);
   font-size: 1rem;
-}
-
-.project-button {
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  margin: 1rem;
 }
 
 /* Contact Section */
@@ -335,7 +352,7 @@ body {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
   }
-  
+
   .big-2 {
     grid-column: 2 / span 2;
     grid-row: 3 / span 2;
