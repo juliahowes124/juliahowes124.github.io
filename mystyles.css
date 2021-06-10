@@ -146,7 +146,6 @@ body {
 }
 
 .card-body {
-  text-align: center;
   margin: 0 auto 2rem;
   padding: .2rem;
 }
@@ -188,12 +187,20 @@ body {
 /* PROJECTS SECTION STYLING*/
 #projects {
   padding-top: 3rem;
-  text-align: center;
   background-color: var(--secondary);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body-buttons {
+  width: 100%
 }
 
 #projects h1 {
   color: var(--dark);
+  text-align: center;
 }
 
 .projects-div {
@@ -209,16 +216,16 @@ body {
   grid-row: 1 / span 2;
 }
 
-.big-1 .card-body .project-button{
+.big-1 .card-body .project-button, .big-2 .card-body .project-button{
   padding: .5rem 1rem;
   margin: 1rem;
 }
 
-.big-1 .card-body .card-title{
+.big-1 .card-body .card-title, .big-2 .card-body .card-title{
   font-size: 2rem;
 }
 
-.big-1 .card-body .content-tools{
+.big-1 .card-body .content-tools, .big-2 .card-body .content-tools{
   font-size: 1rem;
 }
 
@@ -237,7 +244,8 @@ body {
   border: 2px solid var(--accent);
   color: var(--accent);
   padding: .2rem;
-  margin: 0rem;
+  margin: 0rem 0rem 0rem 1rem;
+  float: right;
 }
 
 .big-2 {

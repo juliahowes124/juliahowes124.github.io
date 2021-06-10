@@ -7,34 +7,38 @@ function fillProjects() {
 
     <div class="card content shadow ${project.class}">
       <img class="content-image card-img-top" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" >
-      <div class="card-body m-0">
-        <h3 class="card-title">${project.name}</h3>
-        <div class="content-tools">${project.tools}</div>
-        <div class="content-description card-text">${project.description}</div>
-        <a
-         class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
-         href="${project.demoLink}"
-         target="_blank"
-       >
-       Demos
-         <i class="fa fa-play-circle fa-lg"></i>
-       </a>
-       <a
-         class="btn ${project.site ? 'project-button' : 'hidden'}"
-         href="${project.site}"
-         target="_blank"
-       >
-       Site
-         <i class="fa fa-external-link fa-lg"></i>
-       </a>
-       <a
-         class="btn project-button"
-         href="${project.githubLink}"
-         target="_blank"
-       >
-       Repo
-         <i class="fa fa-github fa-lg"></i>
-       </a>
+      <div class="card-body m-0 d-flex">
+        <div class="card-body-content">
+          <h3 class="card-title">${project.name}</h3>
+          <div class="content-tools">${project.tools}</div>
+          <div class="content-description card-text">${project.description}</div>
+        </div>
+        <div class="card-body-buttons">
+            <a
+            class="btn ${project.demoLink ? 'project-button' : 'hidden'}"
+            href="${project.demoLink}"
+            target="_blank"
+          >
+          Demos
+            <i class="fa fa-play-circle fa-lg"></i>
+          </a>
+          <a
+            class="btn ${project.site ? 'project-button' : 'hidden'}"
+            href="${project.site}"
+            target="_blank"
+          >
+          Site
+            <i class="fa fa-external-link fa-lg"></i>
+          </a>
+          <a
+            class="btn project-button"
+            href="${project.githubLink}"
+            target="_blank"
+          >
+          Repo
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+        </div>
       </div>
     </div>
     `)
