@@ -20,21 +20,21 @@ function fillProjects() {
             href="${project.demoLink}"
             target="_blank"
           >
-            <i class="fa fa-play-circle fa-lg"></i>
+            Demos
           </a>
           <a
             class="btn ${project.site ? 'project-button' : 'hidden'}"
             href="${project.site}"
             target="_blank"
           >
-            <i class="fa fa-external-link fa-lg"></i>
+            Site
           </a>
           <a
             class="btn project-button"
             href="${project.githubLink}"
             target="_blank"
           >
-            <i class="fa fa-github fa-lg"></i>
+            Repo
           </a>
         </div>
       </div>
@@ -55,7 +55,7 @@ const projects = [
 pet can connect with prospective adopters.`,
     demoLink: "https://github.com/juliahowes124/PetApp#feature-demos",
     githubLink: "https://github.com/juliahowes124/PetApp",
-    tools: "Angular / ASP.NET Core / SQLite"
+    tools: "Angular / ASP.NET / SQLite"
   },
 
   {
@@ -64,7 +64,7 @@ pet can connect with prospective adopters.`,
     class: 'big-2',
     fileName: 'travelapp.gif',
     staticFile: 'travelapp.jpeg',
-    description: `A social app to share travel experiences.`,
+    description: `A social web app to share and like travel experiences and view places on a map.`,
     demoLink: "https://github.com/juliahowes124/TravelApp/#feature-demos",
     githubLink: "https://github.com/juliahowes124/TravelApp",
     tools: "React / Node.js / Express / MongoDB"

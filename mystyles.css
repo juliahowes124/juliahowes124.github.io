@@ -212,10 +212,11 @@ body {
 
 .projects-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25vw);
-  grid-template-rows: repeat(10, 25vw);
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(auto-fill, 300px);
   margin: 1rem auto;
   max-width: 2000px;
+  justify-content: center;
 }
 
 .big-1 {
@@ -225,7 +226,6 @@ body {
 
 .big-1 .card-body .project-button, .big-2 .card-body .project-button{
   padding: .2rem;
-  margin: 1rem;
 }
 
 .big-1 .card-body .card-title, .big-2 .card-body .card-title{
@@ -241,6 +241,11 @@ body {
   color: var(--accent);
   font-weight: bold;
   font-size: .8rem;
+}
+
+.card-body-buttons {
+  display: flex;
+  height: fit-content;
 }
 
 
@@ -361,10 +366,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .projects-div {
-    grid-template-columns: repeat(auto-fit, 33vw);
-    grid-template-rows: repeat(10, 33vw);
-  }
   
   .big-1 {
     grid-column: 1 / span 2;
@@ -385,15 +386,15 @@ body {
 /* MOBILE STYLING */
 @media screen and (max-width: 768px) {
 
+  .content-description {
+    display: none;
+  }
+
   .bio hr {
     margin-left: auto;
     margin-right:auto;
   }
 
-  .projects-div {
-    grid-template-columns: repeat(auto-fit, 50vw);
-    grid-template-rows: repeat(10, 50vw);
-  }
 
   .big-1 {
     grid-column: 1 / span 2;
@@ -478,10 +479,6 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .projects-div {
-    grid-template-columns: repeat(auto-fit, 100vw);
-    grid-template-rows: repeat(10, 100vw);
-  }
 
   .big-1 {
     grid-column: 1 / span 1;
@@ -494,10 +491,4 @@ body {
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .projects-div {
-    grid-template-columns: repeat(auto-fit, 25%);
-    grid-template-rows: repeat(10, 15vw);
-  }
-}
 
