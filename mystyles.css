@@ -313,9 +313,12 @@ body {
 .content-image {
   object-fit: cover;
   border-bottom: solid 2px var(--accent);
-  height: 60%;
+  height: 180px;
 }
 
+.big-1 .content-image, .big-2 .content-image{
+  height: 360px;
+}
 
 .content-details {
   position: absolute;
@@ -388,6 +391,10 @@ body {
 
   .content-description {
     display: none;
+  }
+
+  .big-1 .content-image, .big-2 .content-image{
+    height: 180px;
   }
 
   .bio hr {
