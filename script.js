@@ -78,7 +78,7 @@ pet can connect with prospective adopters.`,
     // description: `A social web app to share and like travel experiences and view places on a map.`,
     demoLink: "https://github.com/juliahowes124/TravelApp/#feature-demos",
     githubLink: "https://github.com/juliahowes124/TravelApp",
-    tools: "React / Node.js / Express / MongoDB"
+    tools: "React / Express / MongoDB"
   },
   {
     name: "Notes",
