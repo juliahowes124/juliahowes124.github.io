@@ -226,17 +226,3 @@ pet can connect with prospective adopters.`,
 ];
 
 fillProjects();
-window.addEventListener('resize', handleResize);
-
-function handleResize() {
-  if(window.innerWidth <= 768) {
-    $projectsDiv.delegate(".content", "click", openLink);
-  } else {
-    $projectsDiv.undelegate('.content', 'click', openLink);
-  }
-}
-
-function openLink() {
-  window.open($(this).find("a").attr("href"), '_blank');
-}
-
