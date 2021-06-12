@@ -14,6 +14,15 @@ html {
   overflow-x: hidden;
 }
 
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
 .full-height {
   height: 100vh;
   width: 100%;
@@ -107,7 +116,7 @@ body {
 }
 
 #home h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 .arrow {
@@ -143,11 +152,13 @@ body {
   left: 35%;
   top: 7rem;
   width: 60%;
+  text-align: center;
 }
 
 .card-body {
   margin: 0 auto 2rem;
   padding: .2rem;
+  justify-content: space-between;
 }
 
 .profile-pic {
@@ -191,11 +202,7 @@ body {
 }
 
 .card-body {
-  padding: 1.5rem;
-}
-
-.card-body-buttons {
-  width: 100%
+  padding: 1rem;
 }
 
 #projects h1 {
@@ -217,7 +224,7 @@ body {
 }
 
 .big-1 .card-body .project-button, .big-2 .card-body .project-button{
-  padding: .5rem 1rem;
+  padding: .2rem;
   margin: 1rem;
 }
 
@@ -242,7 +249,8 @@ body {
 }
 .project-button {
   border: 2px solid var(--accent);
-  color: var(--accent);
+  color: white;
+  background-color: var(--accent);
   padding: .2rem;
   margin: 0rem 0rem 0rem 1rem;
   float: right;
@@ -261,10 +269,11 @@ body {
 }
 
 .project-button:hover {
-  background-color: var(--accent);
+  border: 2px solid var(--accent);
+  color: var(--accent);
   transition-duration: 0.25s;
-  color: white;
-  transition: .5s;
+  background-color: white;
+  transition: .25s;
 }
 
 .technologies {
@@ -299,6 +308,7 @@ body {
 .content-image {
   object-fit: cover;
   border-bottom: solid 2px var(--accent);
+  height: 60%;
 }
 
 
@@ -352,8 +362,8 @@ body {
 
 @media screen and (max-width: 1024px) {
   .projects-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 33%);
+    grid-template-columns: repeat(auto-fit, 33vw);
+    grid-template-rows: repeat(10, 33vw);
   }
   
   .big-1 {
@@ -364,6 +374,10 @@ body {
   .big-2 {
     grid-column: 2 / span 2;
     grid-row: 3 / span 2;
+  }
+
+  .card-body {
+    padding: .5rem;
   }
 }
 
@@ -377,18 +391,18 @@ body {
   }
 
   .projects-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50%);
+    grid-template-columns: repeat(auto-fit, 50vw);
+    grid-template-rows: repeat(10, 50vw);
   }
 
   .big-1 {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    grid-row: 1 / span 2;
   }
   
   .big-2 {
     grid-column: 1 / span 2;
-    grid-row: 4 / span 1;
+    grid-row: 4 / span 2;
   }
 
   .full-height {
@@ -432,6 +446,7 @@ body {
     position: static;
     width: 90%;
     margin: 5% 0 0 10%;
+    text-align: center;
   }
 
   .bio {
@@ -461,3 +476,28 @@ body {
   color: white;
   margin: 0;
 }
+
+@media screen and (max-width: 450px) {
+  .projects-div {
+    grid-template-columns: repeat(auto-fit, 100vw);
+    grid-template-rows: repeat(10, 100vw);
+  }
+
+  .big-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+  
+  .big-2 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 2;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .projects-div {
+    grid-template-columns: repeat(auto-fit, 25%);
+    grid-template-rows: repeat(10, 15vw);
+  }
+}
+

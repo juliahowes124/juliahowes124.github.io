@@ -6,7 +6,8 @@ function fillProjects() {
     $projectsDiv.append(`
 
     <div class="card content shadow ${project.class}">
-      <img class="content-image card-img-top" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif" >
+      <img class="static content-image card-img-top" src="./images/${project.staticFile}">
+      <img class="active content-image card-img-top" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif">
       <div class="card-body m-0 d-flex">
         <div class="card-body-content">
           <h3 class="card-title">${project.name}</h3>
@@ -19,7 +20,6 @@ function fillProjects() {
             href="${project.demoLink}"
             target="_blank"
           >
-          Demos
             <i class="fa fa-play-circle fa-lg"></i>
           </a>
           <a
@@ -27,7 +27,6 @@ function fillProjects() {
             href="${project.site}"
             target="_blank"
           >
-          Site
             <i class="fa fa-external-link fa-lg"></i>
           </a>
           <a
@@ -35,7 +34,6 @@ function fillProjects() {
             href="${project.githubLink}"
             target="_blank"
           >
-          Repo
             <i class="fa fa-github fa-lg"></i>
           </a>
         </div>
@@ -52,6 +50,7 @@ const projects = [
     cols: '6',
     class: "big-1",
     fileName: 'petnet.gif',
+    staticFile: 'petnet.jpeg',
     description: `A peer-to-peer platform where pet owners looking to rehome their
 pet can connect with prospective adopters.`,
     demoLink: "https://github.com/juliahowes124/PetApp#feature-demos",
@@ -64,31 +63,35 @@ pet can connect with prospective adopters.`,
     cols: '6',
     class: 'big-2',
     fileName: 'travelapp.gif',
+    staticFile: 'travelapp.jpeg',
     description: `A social app to share travel experiences.`,
     demoLink: "https://github.com/juliahowes124/TravelApp/#feature-demos",
     githubLink: "https://github.com/juliahowes124/TravelApp",
-    tools: "React / Express / MongoDB"
+    tools: "React / Node.js / Express / MongoDB"
   },
   {
     name: "Notes",
     cols: '4',
     fileName: 'notes.gif',
+    staticFile: 'notes.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/FlaskNotes',
-    tools: "Flask / PostreSQL / SQLAlchemy(ORM)"
+    tools: "Flask / PostreSQL / SQLAlchemy"
   },
   {
     name: "Blogly",
     cols: '4',
     fileName: 'blogly.gif',
+    staticFile: 'blogly.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Blogly',
-    tools: "Flask / PostreSQL / SQLAlchemy(ORM)"
+    tools: "Flask / PostreSQL / SQLAlchemy"
   },
   {
     name: "Lights Out",
     cols: '4',
     fileName: 'lights_out.gif',
+    staticFile: 'lightsout.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Lights-Out',
     tools: "React"
@@ -97,6 +100,7 @@ pet can connect with prospective adopters.`,
     name: "Adopt",
     cols: '4',
     fileName: 'adoptly.gif',
+    staticFile: 'adopt.jpg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Adoptly',
     tools: "Flask / WTForms / PostreSQL"
@@ -105,6 +109,7 @@ pet can connect with prospective adopters.`,
     name: "Cupcakes",
     cols: '4',
     fileName: 'cupcakes.gif',
+    staticFile: 'cupcakes.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/FlaskCupcake',
     tools: "PostreSQL / Flask / jQuery"
@@ -113,14 +118,16 @@ pet can connect with prospective adopters.`,
     name: "Websocket Group Chat",
     cols: '4',
     fileName: 'websocket.gif',
+    staticFile: 'websocket.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Websocket-GroupChat',
-    tools: "Node.JS / Express"
+    tools: "Node.js / Express"
   },
   {
     name: "Lunch",
     cols: '4',
     fileName: 'lunch.gif',
+    staticFile: 'lunch.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Lunch',
     tools: "Node.JS / Express / PostgreSQL"
@@ -129,22 +136,25 @@ pet can connect with prospective adopters.`,
     name: "Survey",
     cols: '4',
     fileName: 'survey.gif',
+    staticFile: 'survey.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/FlaskSurvey',
-    tools: "Flask / Jinja / Sessions"
+    tools: "Flask / Jinja"
   },
   {
     name: "Madlibs",
     cols: '4',
     fileName: 'Madlibs.gif',
+    staticFile: 'madlibs.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/Madlibs',
-    tools: "Flask / Jinja / Sessions"
+    tools: "Flask / Jinja"
   },
   {
     name: "Hack Or Snooze",
     cols: '6',
     fileName: 'HackOrSnooze.gif',
+    staticFile: 'hackorsnooze.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/HackOrSnooze',
     tools: "jQuery / Axios"
@@ -153,6 +163,7 @@ pet can connect with prospective adopters.`,
     name: "Connect 4",
     cols: '4',
     fileName: 'ConnectFour.gif',
+    staticFile: 'connect4.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/ConnectFour',
     tools: "JavaScript / OOP"
@@ -161,6 +172,7 @@ pet can connect with prospective adopters.`,
     name: "Boggle",
     cols: '4',
     fileName: 'boggle.gif',
+    staticFile: 'boggle.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/FlaskBoggle',
     tools: "Flask / jQuery"
@@ -169,6 +181,7 @@ pet can connect with prospective adopters.`,
     name: "Meme Maker",
     cols: '4',
     fileName: 'MemeMaker.gif',
+    staticFile: 'mememaker.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/MemeMaker',
     tools: "Vanilla JS",
@@ -178,6 +191,7 @@ pet can connect with prospective adopters.`,
     name: "Giphy Party",
     cols: '4',
     fileName: 'GiphyParty.gif',
+    staticFile: 'giphyparty.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/GiphyParty',
     tools: "jQuery / Axios"
@@ -186,6 +200,7 @@ pet can connect with prospective adopters.`,
     name: "TV Maze",
     cols: '4',
     fileName: 'TvMaze.gif',
+    staticFile: 'tvmaze.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/TvMaze',
     tools: "Axios / Jasmine / Bootstrap"
@@ -194,6 +209,7 @@ pet can connect with prospective adopters.`,
     name: "Dad Jokes",
     cols: '4',
     fileName: 'DadJokes.gif',
+    staticFile: 'dadjokes.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/DadJokes',
     tools: "jQuery / Axios"
@@ -202,6 +218,7 @@ pet can connect with prospective adopters.`,
     name: "Growing Flower",
     cols: '4',
     fileName: 'GrowingFlower.gif',
+    staticFile: 'growingflower.jpeg',
     description: '',
     githubLink: 'https://github.com/juliahowes124/GrowingFlower',
     tools: "CSS"
