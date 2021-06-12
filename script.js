@@ -46,9 +46,20 @@ function fillProjects() {
 
 const projects = [
   {
-    name: 'Pet Net',
+    name: 'Warbler',
     cols: '6',
     class: "big-1",
+    fileName: 'warbler.jpg',
+    staticFile: 'warbler.jpg',
+    description: `A microblogging web app. Users can post, like posts, and follow or block users. Users can have private accounts and admin privileges.`,
+    githubLink: "https://github.com/juliahowes124/Warbler",
+    site: "https://warbler-julia-r20.herokuapp.com/",
+    tools: "Python / Flask / PostgreSQL"
+  },
+  {
+    name: 'Pet Net',
+    cols: '6',
+    class: "big-2",
     fileName: 'petnet.gif',
     staticFile: 'petnet.jpeg',
     description: `A peer-to-peer platform where pet owners looking to rehome their
@@ -57,14 +68,14 @@ pet can connect with prospective adopters.`,
     githubLink: "https://github.com/juliahowes124/PetApp",
     tools: "Angular / ASP.NET / SQLite"
   },
-
   {
     name: 'Travel App',
+    // class: 'big-3',
     cols: '6',
-    class: 'big-2',
     fileName: 'travelapp.gif',
     staticFile: 'travelapp.jpeg',
-    description: `A social web app to share and like travel experiences and view places on a map.`,
+    description: '',
+    // description: `A social web app to share and like travel experiences and view places on a map.`,
     demoLink: "https://github.com/juliahowes124/TravelApp/#feature-demos",
     githubLink: "https://github.com/juliahowes124/TravelApp",
     tools: "React / Node.js / Express / MongoDB"
