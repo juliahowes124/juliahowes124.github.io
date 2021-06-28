@@ -153,6 +153,12 @@ body {
   background-color: var(--primary);
 }
 
+.about-column.start {
+  animation-name: column;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
 .profile-card {
   background-color: var(--secondary);
   position: absolute;
@@ -161,6 +167,33 @@ body {
   width: 60%;
   text-align: center;
 }
+
+.profile-card.start {
+  animation-name: card;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes column {
+  0% {
+    transform: translate(-400px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+@keyframes card {
+  0% {
+    transform: translate(-200px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+
+
 
 .card-body {
   margin: 0 auto 2rem;
