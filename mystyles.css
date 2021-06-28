@@ -21,6 +21,10 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 .static {
   position:absolute;
   background: white;
@@ -162,9 +166,9 @@ body {
 .profile-card {
   background-color: var(--secondary);
   position: absolute;
-  left: 35%;
-  top: 7rem;
-  width: 60%;
+  right: 10%;
+  top: 8rem;
+  width: min(60%, 400px);
   text-align: center;
 }
 
@@ -196,14 +200,15 @@ body {
 
 
 .card-body {
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: .2rem;
   justify-content: space-between;
+  width: 100%;
 }
 
 .profile-pic {
   margin: 2rem auto;
-  width: 60%;
+  width: 55%;
   border-radius: 50%;
 }
 
@@ -257,17 +262,15 @@ body {
 }
 
 .contact_icons_about {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   padding: .5rem;
 }
 
 .contact_icons_about i{
   color: white;
+  margin: 1rem;
 }
 
 /* PROJECTS SECTION STYLING*/
