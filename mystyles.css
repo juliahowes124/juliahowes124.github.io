@@ -3,15 +3,22 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 :root {
-  --primary: #dfceba;
-  --secondary: #e4dcd0;
-  --dark: #353333;
-  --accent: #348493;
+  --primary: #414a6b;
+  --secondary: #d8d7dd;
+  --dark: #1c1b20;
+  --accent: #ff5851;
+  --linkedin: #0072b1;
+  --twitter: #1DA1F2;
+  --instagram: #c13584;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 .static {
@@ -29,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Raleway-bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 
 .shadow {
@@ -186,13 +193,48 @@ body {
   padding: 7px;
   border-radius: 3px;
   margin-bottom: 3rem;
+  border-radius: 0;
 }
 
 .resume:hover {
-  background-color: #22525a;
+  background-color: #dd4c47;
   transition-duration: 0.25s;
   color: white;
   text-decoration: none;
+}
+
+.fa-linkedin:hover {
+  color: var(--linkedin);
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: var(--instagram);
+}
+
+.fa-twitter:hover {
+  color: var(--twitter);
+}
+
+.fa-envelope:hover {
+  color: white;
+}
+
+.contact_icons_about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: .5rem;
+}
+
+.contact_icons_about i{
+  color: white;
 }
 
 /* PROJECTS SECTION STYLING*/
@@ -251,6 +293,7 @@ body {
 
 .card-title {
   font-size: 1.3rem;
+  font-weight: 700;
 }
 .project-button {
   border: 2px solid var(--accent);
@@ -259,6 +302,7 @@ body {
   padding: .2rem;
   margin: 0rem 0rem 0rem 1rem;
   float: right;
+  border-radius: 0;
 }
 
 .big-2 {
@@ -403,6 +447,10 @@ body {
     display: none;
   }
 
+  .profile-card {
+    display: none;
+  }
+
 
   .bio hr {
     margin-left: auto;
@@ -458,16 +506,6 @@ body {
     margin-top: 30%;
   }
 
-  .about-column {
-    display: none;
-  }
-
-  .profile-card {
-    position: static;
-    width: 90%;
-    margin: 5% 0 0 10%;
-    text-align: center;
-  }
 
   .bio {
     width: 100%;
@@ -498,6 +536,14 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+
+  .profile-card {
+    display: none;
+  }
+
+  .about-column {
+    display: none;
+  }
 
   .big-1 {
     grid-column: 1 / span 1;
