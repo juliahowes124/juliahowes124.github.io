@@ -49,7 +49,7 @@ const projects = [
     name: 'Warbler',
     cols: '6',
     class: "big-1",
-    fileName: 'warbler.jpg',
+    fileName: 'warbler.gif',
     staticFile: 'warbler.jpg',
     description: `A microblogging web app. Users can post, like posts, and follow or block users. Users can have private accounts and admin privileges.`,
     githubLink: "https://github.com/juliahowes124/Warbler",
