@@ -139,7 +139,7 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: var(--dark);
+  color: var(--accent);
 }
 @keyframes arrow {
   0% {
