@@ -320,8 +320,12 @@ body {
 
 .content-tools {
   color: var(--accent);
-  font-weight: bold;
+  font-weight: 1000;
   font-size: .8rem;
+}
+
+.content-description {
+  margin-top: 1rem;
 }
 
 .card-body-buttons {
@@ -335,9 +339,9 @@ body {
   font-weight: 700;
 }
 .project-button {
-  border: 2px solid var(--accent);
+  border: 2px solid var(--primary);
   color: white;
-  background-color: var(--accent);
+  background-color: var(--primary);
   padding: .2rem;
   margin: 0rem 0rem 0rem 1rem;
   float: right;
@@ -362,8 +366,8 @@ body {
 }
 
 .project-button:hover {
-  border: 2px solid var(--accent);
-  color: var(--accent);
+  border: 2px solid var(--primary);
+  color: var(--primary);
   transition-duration: 0.25s;
   background-color: white;
   transition: .25s;
@@ -400,7 +404,7 @@ body {
 }
 .content-image {
   object-fit: cover;
-  border-bottom: solid 2px var(--accent);
+  border-bottom: solid 2px var(--primary);
   height: 180px;
 }
 
