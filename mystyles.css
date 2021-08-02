@@ -1,6 +1,6 @@
 /* GLOBAL STYLING */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Mulish);
 
 :root {
   --primary: #414a6b;
@@ -18,7 +18,7 @@ html {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
 }
 
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Mulish";
 }
 
 .shadow {
@@ -60,14 +60,16 @@ body {
 .nav a {
   float: left;
   display: block;
-  color: gray;
-  padding: 0.5rem 1rem;
+  color: var(--dark);
+  padding: 0.5rem .5rem .2rem;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem .5rem;
 }
 
 .nav a.active {
-  color: var(--dark);
+  border-bottom: 2px solid var(--accent);
 }
 
 .nav .menu-button {
@@ -118,7 +120,7 @@ body {
 /* HOME PAGE STYLING */
 #home {
   padding: 10%;
-  background: url(images/lightbulb.jpg) no-repeat;
+  background: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTd8fHNvbGlkJTIwY29sb3IlMjB3aGl0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -128,6 +130,7 @@ body {
 
 #home h1 {
   font-size: 3.5rem;
+  margin-top: 100px
 }
 
 .arrow {
@@ -532,12 +535,10 @@ body {
 
   #home {
     height: 100vh;
-    background-position: 70%;
-    background: url(images/lightbulb_small.jpg) no-repeat;
     background-attachment: relative;
     background-size: cover;
   }
-
+  
   #home h1 {
     margin-top: 30%;
   }
