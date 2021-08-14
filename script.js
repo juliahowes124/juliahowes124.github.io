@@ -6,11 +6,11 @@ function fillProjects() {
     $projectsDiv.append(`
 
     <div class="card content shadow ${project.class}">
-      <img class="static content-image card-img-top" src="./images/${project.staticFile}">
+      <img class="static content-image card-img-top" src="./images/${project.staticFile}" alt="${project.name} Static Image">
       <img class="active content-image card-img-top" src="./gifs/${project.fileName}" alt="${project.name} Demo Gif">
       <div class="card-body m-0 d-flex">
         <div class="card-body-content">
-          <h3 class="card-title">${project.name}</h3>
+          <h2 class="card-title">${project.name}</h2>
           <div class="content-tools">${project.tools}</div>
           <div class="content-description card-text">${project.description}</div>
         </div>
