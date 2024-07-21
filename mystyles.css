@@ -1,69 +1,47 @@
-/* GLOBAL STYLING */
-
-@import url(https://fonts.googleapis.com/css?family=Mulish);
-
-:root {
-  --primary: #414a6b;
-  --dark: #1c1b20;
-  --accent: #ff5851;
-}
-
-hr {
-  background-color: var(--accent);
-  height: 1px;
-  width: 80%;
-}
-
-
-.full-height {
-  height: 100vh;
-  width: 100%;
-}
-
 body {
-  font-family: "Mulish";
-  background-color: var(--primary);
+  background-color: mintcream;
   height: 100vh;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
-.wrapper {
-  background: white;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 1rem 2rem 1rem;
-  box-shadow: 0px 0px 5px var(--dark);
-}
-h1 {
-  color: var(--dark);
-  margin-top: 1rem;
-}
-
-p {
-  color: var(--dark);
-  max-width: 600px;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-img {
-  height: 175px;
-  width: 175px;
+.wrapper .icon {
+  text-decoration: none;
+  background: rgb(149, 183, 165);
   border-radius: 50%;
-  box-shadow: 0px 0px 2px var(--dark);
-  object-fit: cover;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .linkedin:hover {
+  background: #0077b5;
+}
+.wrapper .email:hover {
+  background: #08851b;
+}
+.wrapper .github:hover {
+  background: black;
+}
+.wrapper .strava:hover {
+  background: #fc4c02;
 }
 
-.contact_icons i:hover {
-  transform: scale(1.1);
-  transition-duration: 0.25s;
+i {
+  color: white;
 }
 
-
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
